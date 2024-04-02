@@ -10,9 +10,8 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import servicenow from "../static/sponsors/servicenow.png";
 import fa23 from "../static/bpc_fa23.png";
-import w23 from "../static/bpc_w23.png";
+import w24 from "../static/bpc_w24.png";
 import w232 from "../static/bpc2_w23.png";
-import sp23 from "../static/bpc_sp23.png";
 import janestreet from "../static/sponsors/janestreet.png";
 import ucsdcse from "../static/sponsors/ucsdcse.png";
 import intuit from "../static/sponsors/intuit.png";
@@ -141,6 +140,28 @@ class GetInvolved extends React.Component {
 
                   <Row>
                     <Col xs={8} md={4}>
+                      <LazyLoadImage src={w24} alt={"Winter 2024"} />
+                      <p>
+                        <b>Winter 2024:</b>
+                      </p>
+                      <p>
+                        <a
+                          href="https://drive.google.com/file/d/1_EvRKp0cUjfmGgb48Jobb4J0Z2IedgI-/view?usp=sharing"
+                          target="_blank"
+                        >
+                          Final Problemset
+                        </a>
+                      </p>
+                      <p>
+                        <a
+                          href="https://drive.google.com/drive/folders/1xVt2434ppDCY0iWD50Wd13r6zToY1G5k?usp=drive_link"
+                          target="_blank"
+                        >
+                          Solution
+                        </a>
+                      </p>
+                    </Col>
+                    <Col xs={8} md={4}>
                       <LazyLoadImage src={fa23} alt={"Fall 2023"} />
                       <p>
                         <b>Fall 2023:</b>
@@ -156,28 +177,6 @@ class GetInvolved extends React.Component {
                       <p>
                         <a
                           href="https://drive.google.com/drive/folders/19z8mfowquGIYjH-XU9YfCW5_2q04zzmG?usp=drive_link"
-                          target="_blank"
-                        >
-                          Solution
-                        </a>
-                      </p>
-                    </Col>
-                    <Col xs={8} md={4}>
-                      <LazyLoadImage src={w23} alt={"Winter 2023"} />
-                      <p>
-                        <b>Winter 2023:</b>
-                      </p>
-                      <p>
-                        <a
-                          href="https://drive.google.com/file/d/1HA73LQljn9p6NoiPnYZFL82alUFfKv7_/view?usp=share_link"
-                          target="_blank"
-                        >
-                          Final Problemset
-                        </a>
-                      </p>
-                      <p>
-                        <a
-                          href="https://drive.google.com/file/d/1kAt9I3YNbVpsOORkN5Z0Bcr9nkBWulOT/view?usp=share_link"
                           target="_blank"
                         >
                           Solution

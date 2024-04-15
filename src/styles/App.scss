@@ -206,6 +206,8 @@
 
 #homeImage {
   background-image: url("../static/homeOverlay.png");
+  background-color: $color-purple-lightest-translucent;
+  background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -290,7 +292,7 @@ img {
 }
 
 .bpc-section {
-  padding: $spacer-four 0;
+  padding: $spacer-three 0;
   color: $color-purple-mid;
 
   h1 {
@@ -315,7 +317,6 @@ img {
     }
   }
 }
-
 
 .react-tabs__tab {
   border: none;
@@ -380,9 +381,7 @@ img {
 }
 
 #BPCMargin {
-  margin-top: $spacer-four;
+  margin-top: $spacer-three;
   margin-left: $spacer-three;
-  margin-bottom: $spacer-four;
   margin-right: $spacer-three;
-
 }

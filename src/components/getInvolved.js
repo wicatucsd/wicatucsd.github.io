@@ -110,6 +110,7 @@ class GetInvolved extends React.Component {
         </Container>
 
         <div className="mid-background-section">
+          <h2 id="BPCMargin">Beginner's Programming Competition</h2>
           <p id="BPCMargin">
             For 4+ years, Women in Computing has been hosting quarterly
             programming competitions, Beginner's Programming Competition, for

@@ -1,7 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import GetInvolvedText from "./getInvolvedText.js";
-import { setConfiguration, Row, Col, Container } from "react-grid-system";
+import { Row, Col, Container } from "react-grid-system";
 import "../styles/GetInvolved.scss";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
@@ -211,25 +210,6 @@ class GetInvolved extends React.Component {
                 </TabPanel>
                 <TabPanel>
                   <h3>WIC WI24 Beginner's Programming Competition</h3>
-
-                  {/* <Row>
-              <Col xs={8} md={4}>
-              </Col>
-              <Col xs={8} md={4}>
-                  <LazyLoadImage src={sp23} alt={"Spring 2023"}/>
-              </Col>
-              <Col xs={8} md={4}>
-              </Col>
-
-              </Row> */}
-
-                  {/* <p>Get ready to compete like never before! Stay tuned for our next thrilling BPC coming up in Spring 2023. Follow us on Instagram to be the first to know all the exciting details.</p> */}
-
-                  {/* <p>
-              Gear up and get ready to code your way to the top! Join us on June 3 for WIC's Beginners Programming Competition. 
-              Click <b><a href="https://tinyurl.com/bpcspring23" target="_blank">here</a></b> to sign up and <b><a href="https://tinyurl.com/springbpcv" target="_blank">here</a></b> to volunteer!
-              </p> */}
-
                   {
                     <p>
                       More details regarding WIC's Beginners Programming

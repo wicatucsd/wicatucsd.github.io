@@ -45,4 +45,3 @@ RedirectMatch 301 ^/wic-election-faqs https://docs.google.com/document/d/1mi1lwm
 RedirectMatch 301 ^/braindate-interest https://docs.google.com/forms/d/e/1FAIpQLSegLojfs92If6eKVGE2n2e5fV5vJ_BTcFARE0X-TKDBtZOkDw/viewform
 RedirectMatch 301 ^/deic-apply https://forms.gle/XkQmmGv23YdAxgaz8
 RedirectMatch 301 ^/voting https://docs.google.com/forms/d/e/1FAIpQLSe9IX1d9UeQjGiPlInGP5S4O0aif3Q-9h9ngJInWwr_0etmMw/viewform
-

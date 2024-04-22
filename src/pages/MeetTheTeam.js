@@ -1,5 +1,5 @@
 import React from "react";
-import { setConfiguration, Row, Col, Container } from "react-grid-system";
+import { Row, Col, Container } from "react-grid-system";
 import Member from "../components/Member.js";
 import { all_members } from "../components/AllMembers";
 import MemberPopup from "../components/MemberPopup";
@@ -9,21 +9,21 @@ class MeetTheTeam extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      showModal: -1
+      showModal: -1,
     };
   }
 
-  getModal = value => {
+  getModal = (value) => {
     document.getElementById("opaque-filler").style.display = "block";
     this.setState({
-      showModal: value
+      showModal: value,
     });
   };
 
-  hideModal = value => {
+  hideModal = (value) => {
     document.getElementById("opaque-filler").style.display = "none";
     this.setState({
-      showModal: -1
+      showModal: -1,
     });
   };
 
@@ -44,7 +44,7 @@ class MeetTheTeam extends React.Component {
                 {all_members.map((member, idx) => {
                   return (
                     <React.Fragment key={member.name}>
-                      <Col xs={6} sm={4} md={3} key = {idx}>
+                      <Col xs={6} sm={4} md={3} key={idx}>
                         <div onClick={() => this.getModal(idx)}>
                           <Member
                             picture={member.picture}

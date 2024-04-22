@@ -1,6 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { setConfiguration, Row, Col, Container } from "react-grid-system";
+import { Row, Col, Container } from "react-grid-system";
 import Button from "../components/Button";
 import amazon from "../static/sponsors/amazon.png";
 import arista from "../static/sponsors/aristanetworks.png";
@@ -21,11 +20,11 @@ import roblox from "../static/sponsors/roblox.png";
 import salesforce from "../static/sponsors/salesforce.png";
 import servicenow from "../static/sponsors/servicenow.png";
 import twilio from "../static/sponsors/twilio.png";
-import ucsdcse from "../static/sponsors/ucsdcse.png"; 
-import janestreet from "../static/sponsors/janestreet.png"; 
-import visa from "../static/sponsors/visa.png"; 
+import ucsdcse from "../static/sponsors/ucsdcse.png";
+import janestreet from "../static/sponsors/janestreet.png";
+import visa from "../static/sponsors/visa.png";
 import "../styles/App.scss";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 class Sponsors extends React.Component {
   render() {
@@ -38,112 +37,118 @@ class Sponsors extends React.Component {
             </Col>
             <Col id="logoMargin" xs={6} md={3}>
               <div>
-                <LazyLoadImage src={amazon} alt="amazon"/>
+                <LazyLoadImage src={amazon} alt="amazon" />
               </div>
             </Col>
             <Col id="logoMargin" xs={6} md={3}>
               <div>
-                <LazyLoadImage src={arista} alt="arista networks"/>
+                <LazyLoadImage src={arista} alt="arista networks" />
               </div>
             </Col>
             <Col id="logoMargin" xs={6} md={3}>
               <div>
-                <LazyLoadImage src={bloomberg} alt="bloomberg"/>
+                <LazyLoadImage src={bloomberg} alt="bloomberg" />
               </div>
             </Col>
             <Col id="logoMargin" xs={6} md={3}>
               <div>
-                <LazyLoadImage src={boeing} alt="boeing"/>
+                <LazyLoadImage src={boeing} alt="boeing" />
               </div>
             </Col>
             <Col id="logoMargin" xs={6} md={3}>
               <div>
-                <LazyLoadImage src={braincorp} alt="brain corporation"/>
+                <LazyLoadImage src={braincorp} alt="brain corporation" />
               </div>
             </Col>
             <Col id="logoMargin" xs={6} md={3}>
               <div>
-                <LazyLoadImage src={collins} alt="collins"/>
+                <LazyLoadImage src={collins} alt="collins" />
               </div>
             </Col>
             <Col id="logoMargin" xs={6} md={3}>
               <div>
-                <LazyLoadImage src={costar} alt="costar"/>
+                <LazyLoadImage src={costar} alt="costar" />
               </div>
             </Col>
             <Col id="logoMargin" xs={6} md={3}>
               <div>
-                <LazyLoadImage src={ga} alt="general atomics"/>
+                <LazyLoadImage src={ga} alt="general atomics" />
               </div>
             </Col>
             <Col id="logoMargin" xs={6} md={3}>
               <div>
-                <LazyLoadImage src={idea} alt="idea engineering student center"/>
+                <LazyLoadImage
+                  src={idea}
+                  alt="idea engineering student center"
+                />
               </div>
             </Col>
             <Col id="logoMargin" xs={6} md={3}>
               <div>
-                <LazyLoadImage src={intuit} alt="intuit"/>
+                <LazyLoadImage src={intuit} alt="intuit" />
               </div>
             </Col>
             <Col id="logoMargin" xs={6} md={3}>
               <div>
-                <LazyLoadImage src={janestreet} alt="jane street"/>
+                <LazyLoadImage src={janestreet} alt="jane street" />
               </div>
             </Col>
             <Col id="logoMargin" xs={6} md={3}>
               <div>
-                <LazyLoadImage src={lockheed} alt="lockheed martin"/>
+                <LazyLoadImage src={lockheed} alt="lockheed martin" />
               </div>
             </Col>
             <Col id="logoMargin" xs={6} md={3}>
               <div>
-                <LazyLoadImage src={meta} alt="meta"/>
+                <LazyLoadImage src={meta} alt="meta" />
               </div>
             </Col>
             <Col id="logoMargin" xs={6} md={3}>
               <div>
-                <LazyLoadImage src={northrop} alt="northrop grumman"/>
+                <LazyLoadImage src={northrop} alt="northrop grumman" />
               </div>
             </Col>
             <Col id="logoMargin" xs={6} md={3}>
               <div>
-                <LazyLoadImage src={nutanix} alt="nutanix"/>
+                <LazyLoadImage src={nutanix} alt="nutanix" />
               </div>
             </Col>
             <Col id="logoMargin" xs={6} md={3}>
               <div>
-                <LazyLoadImage src={onevigor} alt="one vigor"/>
+                <LazyLoadImage src={onevigor} alt="one vigor" />
               </div>
             </Col>
             <Col id="logoMargin" xs={6} md={3}>
               <div>
-                <LazyLoadImage src={roblox} alt="one vigor"/>
+                <LazyLoadImage src={roblox} alt="one vigor" />
               </div>
             </Col>
             <Col id="logoMargin" xs={6} md={3}>
               <div>
-                <LazyLoadImage src={salesforce} alt="sales force"/>
+                <LazyLoadImage src={salesforce} alt="sales force" />
               </div>
             </Col>
             <Col id="logoMargin" xs={6} md={3}>
               <div>
-                <LazyLoadImage src={servicenow} alt="service now"/>
+                <LazyLoadImage src={servicenow} alt="service now" />
               </div>
             </Col>
             <Col id="logoMargin" xs={6} md={3}>
               <div>
-                <LazyLoadImage src={twilio} alt="twilio"/>
+                <LazyLoadImage src={twilio} alt="twilio" />
               </div>
             </Col>
             <Col id="logoMargin" xs={6} md={3}>
               <div>
-                <LazyLoadImage src={ucsdcse} alt="ucsd cse computer science and engineering"/>
+                <LazyLoadImage
+                  src={ucsdcse}
+                  alt="ucsd cse computer science and engineering"
+                />
               </div>
             </Col>
             <Col id="logoMargin" xs={6} md={3}>
               <div>
-                <LazyLoadImage src={visa} alt="visa"/>
+                <LazyLoadImage src={visa} alt="visa" />
               </div>
             </Col>
           </Row>
@@ -155,14 +160,14 @@ class Sponsors extends React.Component {
                 toLink="https://drive.google.com/file/d/1Df_nTWSOrTfvs1Xaa9Hzts0yWHYRqBQV/view?usp=sharing"
               />
             </Col>
-            <Col className="sponsors-resume-database"sm={4}>
+            <Col className="sponsors-resume-database" sm={4}>
               <Button
                 type="primary"
                 text="Resume Database"
                 toLink="https://airtable.com/shrfVnXweer0HRowp"
               />
             </Col>
-            <Col className="sponsors-sponsor-us"sm={4}>
+            <Col className="sponsors-sponsor-us" sm={4}>
               <Button
                 type="primary"
                 text="Sponsor Us"

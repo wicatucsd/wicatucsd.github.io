@@ -1,10 +1,6 @@
 import React from "react";
 
 export default class Button extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   componentDidMount() {
     this.centerButton();
     window.addEventListener("resize", this.centerButton);
@@ -27,7 +23,7 @@ export default class Button extends React.Component {
   render() {
     return (
       <div className={this.props.type}>
-        <a href={this.props.toLink} target="_blank">
+        <a href={this.props.toLink}>
           <button className="front-button">
             <h5>{this.props.text}</h5>
           </button>

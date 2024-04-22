@@ -1,24 +1,19 @@
 import React from "react";
 import { all_members } from "./AllMembers";
 import { Row, Col } from "react-grid-system";
-import { FaLinkedinIn, FaGithub, FaInstagram, FaEnvelope } from "react-icons/fa";
+import {
+  FaLinkedinIn,
+  FaGithub,
+  FaInstagram,
+  FaEnvelope,
+} from "react-icons/fa";
 import "../styles/MeetTheTeam.scss";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 class MemberPopup extends React.Component {
   constructor(props) {
     super(props);
     this.memberRef = React.createRef();
-  }
-
-  componentDidMount() {
-    // this.positionMember();
-  }
-
-  positionMember() {
-    // if (this.memberRef) {
-    //   console.log(this.memberRef.current);
-    // }
   }
 
   render() {
@@ -38,7 +33,11 @@ class MemberPopup extends React.Component {
               </button>
               <Row justify="center" type="flex">
                 <Col xs={10} md={4}>
-                  <LazyLoadImage src={all_members[index].picture} alt={all_members[index].name} effect="blur"/>
+                  <LazyLoadImage
+                    src={all_members[index].picture}
+                    alt={all_members[index].name}
+                    effect="blur"
+                  />
                 </Col>
                 <Col xs={10} className="member-popup-info" md={6}>
                   <div>
@@ -54,26 +53,26 @@ class MemberPopup extends React.Component {
               </Row>
               <Row>
                 <Col className="member-popup-socials">
-                {all_members[index].email && 
-                  <a href={all_members[index].email} target="_blank">
-                    <FaEnvelope />
-                  </a>
-                }
-                { all_members[index].github && 
-                  <a href={all_members[index].github} target="_blank">
-                    <FaGithub />
-                  </a>
-                }
-                { all_members[index].linkedin && 
-                  <a href={all_members[index].linkedin} target="_blank">
-                    <FaLinkedinIn />
-                  </a>
-                }
-                {all_members[index].instagram && 
-                  <a href={all_members[index].instagram} target="_blank">
-                    <FaInstagram />
-                  </a>
-                }
+                  {all_members[index].email && (
+                    <a href={all_members[index].email} target="_blank">
+                      <FaEnvelope />
+                    </a>
+                  )}
+                  {all_members[index].github && (
+                    <a href={all_members[index].github} target="_blank">
+                      <FaGithub />
+                    </a>
+                  )}
+                  {all_members[index].linkedin && (
+                    <a href={all_members[index].linkedin} target="_blank">
+                      <FaLinkedinIn />
+                    </a>
+                  )}
+                  {all_members[index].instagram && (
+                    <a href={all_members[index].instagram} target="_blank">
+                      <FaInstagram />
+                    </a>
+                  )}
                 </Col>
               </Row>
             </div>

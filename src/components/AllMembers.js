@@ -190,7 +190,7 @@ export const all_members = [
     name: "Kathy Chen",
     position: "Web Development Chair",
     year: "Sixth College, Class of 2025",
-    language: "C++",
+    language: "Python",
     spot: "Middle of Muir (M.O.M.)",
     wiclove: "the empowerment and endless love from everyone!",
     email: "mailto:ktchen@ucsd.edu",

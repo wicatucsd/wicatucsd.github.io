@@ -198,7 +198,7 @@ export const all_members = [
   {
     'picture': require("../static/board-members/Kathy.jpg"),
     'name': 'Kathy Chen',
-    'position': 'BPC Chair',
+    'position': "Beginners' Programming Competition Chair",
     'year': 'Sixth College, 4th Year',
     'language': 'Java or C++',
     'spot': 'MOMs cafe or DIB :)',
@@ -212,7 +212,7 @@ export const all_members = [
   {
     'picture': require("../static/board-members/Shambhavi.jpg"),
     'name': 'Shambhavi Mittal ',
-    'position': 'BPC Chair',
+    'position': "Beginners' Programming Competition Chair",
     'year': 'Seventh College, 3rd Year',
     'language': 'Python',
     'spot': 'My dorm room :) ',

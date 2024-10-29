@@ -7,8 +7,8 @@ export const all_members = [
     'language': 'Python ',
     'spot': '4th floor DIB',
     'wiclove': 'All the amazing people in WIC 🫶',
-    'email': '',
-    'linkedin': '',
+    'email': 'lbattikha@ucsd.edu',
+    'linkedin': 'https://www.linkedin.com/in/lina-battikha/',
     'instagram': '',
     'github': '',
     'bio': "I'm a San Diego local!"

@@ -6,12 +6,12 @@ RedirectMatch 301 ^/linkedin https://www.linkedin.com/company/wicucsd/about/
 RedirectMatch 301 ^/sponsorship https://drive.google.com/file/d/1nuMtyG3DIZsTHyIa19-hLOzgUnEWIHvN/view?usp=share_link 
 RedirectMatch 301 ^/sponsor-us https://docs.google.com/forms/d/e/1FAIpQLSdbzXPgOPNS8DYAYMxEEgzivRWd02_ojDv-9agyhM-8rr1wSQ/viewform
 RedirectMatch 301 ^/active-member https://docs.google.com/forms/d/e/1FAIpQLScsf3G_eeySKZ_8dhYSUFtQmUNnFwa__rVOOBnrvium5lIAjQ/viewform 
-RedirectMatch 301 ^/mailing-list https://docs.google.com/forms/d/e/1FAIpQLSdgc_EDr7_Us0PWE1Yw2NdpCEfimsXe6ldvaZ3-qSA4r9CyuA/viewform
+RedirectMatch 301 ^/mailing-list https://forms.gle/7PzwY54yxxZLmMuP7
 RedirectMatch 301 ^/fall-project-team https://docs.google.com/forms/d/e/1FAIpQLSezf5jTZXOD8INtQA28t4m3OsSnVtvSaqPBiH23uj2m4JYMAw/viewform
 RedirectMatch 301 ^/edge-mentor-app https://docs.google.com/forms/d/e/1FAIpQLSdK24qhi48lK_WvIjFHObwYUwRPqecxYFS3cqQouTMzvFTjlQ/viewform
 RedirectMatch 301 ^/edge-committee-app https://docs.google.com/forms/d/1KkXsRgLVgph8byChh3oPCpUgJsTKI3RfPI3atKO2Hew/viewform 
 RedirectMatch 301 ^/intern https://forms.gle/febicxHaAaanqweG7
-RedirectMatch 301 ^/sign-in https://forms.gle/pKXyN7y8iERj1eZz5
+RedirectMatch 301 ^/sign-in https://forms.gle/D7vWVCgu2n6L5orw6
 RedirectMatch 301 ^/resume-database https://airtable.com/shrfVnXweer0HRowp 
 RedirectMatch 301 ^/resume-drop https://airtable.com/shrWaHEgJZ4KQ8kJn 
 RedirectMatch 301 ^/mentor-mentee https://forms.gle/f21t8dJV3cGdwQ8x5
@@ -45,3 +45,8 @@ RedirectMatch 301 ^/wic-election-faqs https://docs.google.com/document/d/1mi1lwm
 RedirectMatch 301 ^/braindate-interest https://docs.google.com/forms/d/e/1FAIpQLSegLojfs92If6eKVGE2n2e5fV5vJ_BTcFARE0X-TKDBtZOkDw/viewform
 RedirectMatch 301 ^/deic-apply https://forms.gle/XkQmmGv23YdAxgaz8
 RedirectMatch 301 ^/voting https://docs.google.com/forms/d/e/1FAIpQLSe9IX1d9UeQjGiPlInGP5S4O0aif3Q-9h9ngJInWwr_0etmMw/viewform
+RedirectMatch 301 ^/voting https://docs.google.com/forms/d/e/1FAIpQLSe9IX1d9UeQjGiPlInGP5S4O0aif3Q-9h9ngJInWwr_0etmMw/viewform
+RedirectMatch 301 ^/techdev-firebase-auth https://docs.google.com/presentation/d/1WApJOtv5JH5r3Gd-Bgpl-5M5BSVDQ4rZdeKzrASjEC4/edit#slide=id.p
+RedirectMatch 301 ^/firebase-chat-app-workshop https://docs.google.com/presentation/d/1tx2K4bcNIwgFbbPDvgunFbdJyLCamWokonpPZsqt66Y/edit#slide=id.p 
+RedirectMatch 301 ^/llm-rag-workshop https://docs.google.com/presentation/d/11md5L8ApaHf6mXWfJo7YmuLQoEZxT3mDoaAgYcwiqTA/edit#slide=id.p
+RedirectMatch 301 ^/llm-rag-notebook https://colab.research.google.com/drive/1ThhZ4FrSEciAXprC_BfsvDeenaZ8E4vn?usp=sharing 

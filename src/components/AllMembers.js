@@ -314,7 +314,7 @@ export const all_members = [
     'year': 'Sixth College, 4th Year',
     'language': 'Python',
     'spot': 'DIB',
-    'wiclove': 'The friends I made through WIC!',
+    'wiclove': 'The friends and connections I made through WIC!',
     'email': '',
     'linkedin': '',
     'instagram': '',

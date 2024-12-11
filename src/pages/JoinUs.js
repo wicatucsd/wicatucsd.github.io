@@ -1,7 +1,7 @@
 import React from 'react'
 import { Row, Col, Container } from "react-grid-system";
 import "../styles/JoinUs.scss";
-import {ImQuotesLeft} from 'react-icons/im'
+import { ImQuotesLeft } from 'react-icons/im'
 import PhotoGallery from '../components/PhotoGallery.js'
 import Button from "../components/Button";
 import "../styles/App.scss";
@@ -13,9 +13,9 @@ import { FiKey } from "react-icons/fi";
 import JoinUsSection from "../components/JoinUsSection";
 
 
-class JoinUs extends React.Component{
-    render(){
-        return(
+class JoinUs extends React.Component {
+    render() {
+        return (
             <div className="mid-background-section" id="join-us-page">
                 <Container>
                     <Row id="join-us-title">
@@ -27,7 +27,7 @@ class JoinUs extends React.Component{
                         <Col xs={10} md={9}>
                             <div id="join-us-body">
                                 <div id="join-us-quote-icon">
-                                    <ImQuotesLeft/>
+                                    <ImQuotesLeft />
                                 </div>
                                 <p id="join-us-quote">if you teach <span id="quote-bold">&nbsp;one girl&nbsp;</span> how to code, she will <span id="quote-bold">&nbsp;teach three&nbsp;</span>.</p>
                             </div>
@@ -66,7 +66,7 @@ class JoinUs extends React.Component{
                             <Button
                                 type="secondary"
                                 text="Track your membership"
-                                toLink="https://docs.google.com/spreadsheets/d/1pf-gP8YrCsXC5cvfbrwTWt_-BKNqrLwy7JWXca89eIE/edit#gid=1576561705"
+                                toLink="https://docs.google.com/spreadsheets/d/1TbOUdSKx0nSFLgpoUNVw1BJCE5UtIFGNLM9wW1DAmfI/edit?usp=sharing"
                             />
                         </Col>
                         <Col className="join-us-mailing-list" xs={12} xl={4}>

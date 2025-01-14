@@ -9,8 +9,10 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import servicenow from "../static/sponsors/servicenow.png";
 import fa23 from "../static/bpc_fa23.png";
-import w24 from "../static/bpc_w24.png";
 import w232 from "../static/bpc2_w23.png";
+import w24 from "../static/bpc_w24.png";
+import sp24 from "../static/bpc_sp24.png";
+import fa24 from "../static/bpc_fa24.png";
 import janestreet from "../static/sponsors/janestreet.png";
 import ucsdcse from "../static/sponsors/ucsdcse.png";
 import intuit from "../static/sponsors/intuit.png";
@@ -140,6 +142,52 @@ class GetInvolved extends React.Component {
 
                   <Row>
                     <Col xs={8} md={4}>
+                      <LazyLoadImage src={fa24} alt={"Fall 2024"} />
+                      <p>
+                        <b>Fall 2024:</b>
+                      </p>
+                      <p>
+                        <a
+                          href="https://docs.google.com/document/d/1vqgGeHG0lIiOZYssqjbHJYgEhdNokoGccgYytFY5540/edit?usp=sharing"
+                          target="_blank"
+                        >
+                          Final Problemset
+                        </a>
+                      </p>
+                      <p>
+                        <a
+                          href="https://www.dropbox.com/scl/fo/90d8l7bjnla606zaast53/AOmaW_vi4CIhE9Fwvj88hzg?rlkey=0ifwpoc2757aiw8e7f25j3r2b&st=7s4ikkhr&dl=0"
+                          target="_blank"
+                        >
+                          Solution
+                        </a>
+                      </p>
+                      <br/>
+                    </Col>
+                    <Col xs={8} md={4}>
+                      <LazyLoadImage src={sp24} alt={"Spring 2024"} />
+                      <p>
+                        <b>Spring 2024:</b>
+                      </p>
+                      <p>
+                        <a
+                          href="https://docs.google.com/document/d/1gU675Pz3CoLy-EA_mnPizWgAOllFKSAeR2CKP_95bgI/edit?usp=sharing"
+                          target="_blank"
+                        >
+                          Final Problemset
+                        </a>
+                      </p>
+                      <p>
+                        <a
+                          href="https://www.dropbox.com/scl/fo/g26winfpqufbfuku9i1ix/AKOLDePq3OW9BrL-iHZAy4g?rlkey=aru92w9co9rhq1ef80rxzt6ae&e=1&st=a5p1b3sb&dl=0"
+                          target="_blank"
+                        >
+                          Solution
+                        </a>
+                      </p>
+                      <br/>
+                    </Col>
+                    <Col xs={8} md={4}>
                       <LazyLoadImage src={w24} alt={"Winter 2024"} />
                       <p>
                         <b>Winter 2024:</b>
@@ -160,6 +208,7 @@ class GetInvolved extends React.Component {
                           Solution
                         </a>
                       </p>
+                      <br/>
                     </Col>
                     <Col xs={8} md={4}>
                       <LazyLoadImage src={fa23} alt={"Fall 2023"} />
@@ -182,6 +231,7 @@ class GetInvolved extends React.Component {
                           Solution
                         </a>
                       </p>
+                      <br/>
                     </Col>
 
                     <Col xs={8} md={4}>

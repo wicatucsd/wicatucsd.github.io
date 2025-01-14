@@ -210,52 +210,6 @@ class GetInvolved extends React.Component {
                       </p>
                       <br/>
                     </Col>
-                    <Col xs={8} md={4}>
-                      <LazyLoadImage src={fa23} alt={"Fall 2023"} />
-                      <p>
-                        <b>Fall 2023:</b>
-                      </p>
-                      <p>
-                        <a
-                          href="https://docs.google.com/document/d/1d73ZOb400IiKG9-A2xOXiM0tYuy3bQLtPryI2F3xHK8/edit?usp=drive_link"
-                          target="_blank"
-                        >
-                          Final Problemset
-                        </a>
-                      </p>
-                      <p>
-                        <a
-                          href="https://drive.google.com/drive/folders/19z8mfowquGIYjH-XU9YfCW5_2q04zzmG?usp=drive_link"
-                          target="_blank"
-                        >
-                          Solution
-                        </a>
-                      </p>
-                      <br/>
-                    </Col>
-
-                    <Col xs={8} md={4}>
-                      <LazyLoadImage src={w232} alt={"Winter 2023 Part 2"} />
-                      <p>
-                        <b>Winter 2023 Part2:</b>
-                      </p>
-                      <p>
-                        <a
-                          href="https://drive.google.com/file/d/1sxD0jBMoVOaUdKeXTwwMAOb7YFdEhXNZ/view?usp=sharing"
-                          target="_blank"
-                        >
-                          Final Problemset
-                        </a>
-                      </p>
-                      <p>
-                        <a
-                          href="https://drive.google.com/file/d/11y7qvm9-Ea-TucEsv_11ufPnP5Xjk4xV/view?usp=sharing"
-                          target="_blank"
-                        >
-                          Solution
-                        </a>
-                      </p>
-                    </Col>
                   </Row>
                 </TabPanel>
                 <TabPanel>

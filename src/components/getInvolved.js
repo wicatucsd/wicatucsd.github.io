@@ -5,12 +5,12 @@ import "../styles/GetInvolved.scss";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import "../styles/App.scss";
+import Button from "./Button.js";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import servicenow from "../static/sponsors/servicenow.png";
-import fa23 from "../static/bpc_fa23.png";
-import w232 from "../static/bpc2_w23.png";
 import w24 from "../static/bpc_w24.png";
+import w25 from "../static/bpc_w25.png";
 import sp24 from "../static/bpc_sp24.png";
 import fa24 from "../static/bpc_fa24.png";
 import janestreet from "../static/sponsors/janestreet.png";
@@ -162,7 +162,7 @@ class GetInvolved extends React.Component {
                           Solution
                         </a>
                       </p>
-                      <br/>
+                      <br />
                     </Col>
                     <Col xs={8} md={4}>
                       <LazyLoadImage src={sp24} alt={"Spring 2024"} />
@@ -185,7 +185,7 @@ class GetInvolved extends React.Component {
                           Solution
                         </a>
                       </p>
-                      <br/>
+                      <br />
                     </Col>
                     <Col xs={8} md={4}>
                       <LazyLoadImage src={w24} alt={"Winter 2024"} />
@@ -208,18 +208,33 @@ class GetInvolved extends React.Component {
                           Solution
                         </a>
                       </p>
-                      <br/>
+                      <br />
                     </Col>
                   </Row>
                 </TabPanel>
                 <TabPanel>
-                  <h3>WIC WI24 Beginner's Programming Competition</h3>
-                  {
-                    <p>
-                      More details regarding WIC's Beginners Programming
-                      Competition for winter quarter coming soon!
-                    </p>
-                  }
+                  <h3>Winter 2025</h3>
+                  <Row>
+                    <Col xs={12} md={6}>
+                      <p id="upcomingBpcDesc">
+                        This quarter's BPC is a a Sherlock-themed beginner-level programming competition in association with Northrop Grumman for UCSD undergrads who haven’t taken upper-div CSE or DSC courses. Everyone is welcome to participate! There will be a guest speaker from Northrop Grumman talking about their experience from 2:15 - 2:45pm. Form teams of 1-2 and attempt to solve 10 problems in 3 hours!
+                      </p>
+                      <Button
+                        type="primary"
+                        text="Participant Sign-Up"
+                        toLink="https://forms.gle/ZXvFNseTviJrbFGu7"
+                      />
+                      <Button
+                        type="primary"
+                        text="Volunteer Sign-Up"
+                        toLink="https://forms.gle/6FLNJ9R9VhCxt18s9"
+                      />
+                    </Col>
+                    <Col xs={12} md={6}>
+                      <LazyLoadImage src={w25} alt={"Winter 2025"} />
+                    </Col>
+                  </Row>
+
                 </TabPanel>
                 <TabPanel>
                   <h3>Past Sponsors</h3>

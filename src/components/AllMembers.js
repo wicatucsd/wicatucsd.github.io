@@ -98,6 +98,20 @@ export const all_members = [
     'bio': 'I like to play tennis, read, and listen to music :)'
   },
   {
+    'picture': require("../static/board-members/Trinity.jpg"),
+    'name': 'Trinity Ortiz',
+    'position': 'Vice President Diversity, Equity, and Inclusion',
+    'year': 'Warren College, 4th Year',
+    'language': 'Python',
+    'spot': 'The Vices and Virtues building at night',
+    'wiclove': 'Watching people grow in their tech journeys and building their confidence :)',
+    'email': '',
+    'linkedin': '',
+    'instagram': '',
+    'github': '',
+    'bio': "I'm a 2nd degree black belt in taekwondo!"
+  },
+  {
     'picture': require("../static/board-members/Michelle.jpg"),
     'name': 'Michelle Ma',
     'position': 'Secretary',
@@ -222,20 +236,6 @@ export const all_members = [
     'instagram': '',
     'github': '',
     'bio': 'I do not know how to ride a bicycle! I have tried a few times and have always fell flat on my face. '
-  },
-  {
-    'picture': require("../static/board-members/Trinity.jpg"),
-    'name': 'Trinity Ortiz',
-    'position': 'DEI Chair',
-    'year': 'Warren College, 4th Year',
-    'language': 'Python',
-    'spot': 'The Vices and Virtues building at night',
-    'wiclove': 'Watching people grow in their tech journeys and building their confidence :)',
-    'email': '',
-    'linkedin': '',
-    'instagram': '',
-    'github': '',
-    'bio': "I'm a 2nd degree black belt in taekwondo!"
   },
   {
     'picture': require("../static/board-members/Heidi.jpg"),

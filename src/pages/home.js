@@ -20,7 +20,7 @@ class Home extends React.Component {
               <Button
                 type="home"
                 text="Join Us"
-                toLink="https://wic.ucsd.edu/links"
+                toLink="https://linktr.ee/wicucsd"
               />
             </Col>
           </Row>

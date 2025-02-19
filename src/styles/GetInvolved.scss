@@ -2,6 +2,10 @@
 @import "./Vars.scss";
 @import "react-alice-carousel/lib/scss/alice-carousel.scss";
 
+#upcomingBpcDesc {
+    margin-bottom: $spacer-one;
+}
+
 #GetInvolvedMentorBPC {
     margin-bottom: $spacer-two;
 }

@@ -27,6 +27,14 @@ class AboutUs extends React.Component {
                 connect and succeed. Check out the above video from our
                 2023-2024 presidents!
               </p>
+              <p id="university-policy-statement">
+                In accordance with applicable Federal and State law and University policy, 
+                Undergraduate Women in Computing at UC San Diego does not discriminate, 
+                or grant preferences, on the basis of race, color, national origin, religion, 
+                sex, disability, and/or other protected categories. All enrolled students are 
+                encouraged to participate in Undergraduate Women in Computing at UC San Diego 
+                events and activities.
+              </p>
             </Col>
           </Row>
         </Container>

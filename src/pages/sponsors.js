@@ -157,7 +157,7 @@ class Sponsors extends React.Component {
               <Button
                 type="primary"
                 text="Learn More"
-                toLink="https://drive.google.com/file/d/1Df_nTWSOrTfvs1Xaa9Hzts0yWHYRqBQV/view?usp=sharing"
+                toLink="https://drive.google.com/file/d/1dHTXJWoNeEYoXo7ohLOukdOaf47sIUku/view?usp=sharing"
               />
             </Col>
             <Col className="sponsors-resume-database" sm={4}>

@@ -9,8 +9,10 @@ import braincorp from "../static/sponsors/braincorp.png";
 import collins from "../static/sponsors/collins.png";
 import costar from "../static/sponsors/costar.png";
 import ga from "../static/sponsors/generalatomics.png";
+import google from "../static/sponsors/google.png";
 import idea from "../static/sponsors/idea.png";
 import intuit from "../static/sponsors/intuit.png";
+import leidos from "../static/sponsors/leidos.png";
 import lockheed from "../static/sponsors/lockheedmartin.png";
 import meta from "../static/sponsors/meta.png";
 import northrop from "../static/sponsors/northropgrumman.png";
@@ -149,6 +151,16 @@ class Sponsors extends React.Component {
             <Col id="logoMargin" xs={6} md={3}>
               <div>
                 <LazyLoadImage src={visa} alt="visa" />
+              </div>
+            </Col>
+            <Col id="logoMargin" xs={6} md={3}>
+              <div>
+                <LazyLoadImage src={google} alt="google" />
+              </div>
+            </Col>
+            <Col id="logoMargin" xs={6} md={3}>
+              <div>
+                <LazyLoadImage src={leidos} alt="leidos" />
               </div>
             </Col>
           </Row>

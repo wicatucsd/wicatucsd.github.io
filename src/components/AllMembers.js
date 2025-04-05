@@ -391,4 +391,17 @@ export const all_members = [
     'github': 'https://github.com/ominjoo',
     'bio': 'I might have the shortest UCSD email ever >:D because my last name is one letter'
   },
+  {
+    'picture': require("../static/board-members/Adrianne.jpg"),
+    'name': 'Adrianne Nguyen',
+    'position': 'Outreach Intern',
+    'year': 'Warren, 2nd Year',
+    'language': 'Python',
+    'wiclove': 'The supportive, welcoming, and driven community in WIC.',
+    'email': '',
+    'linkedin': 'https://www.linkedin.com/in/adrianne-nguyen-803793216/',
+    'instagram': '',
+    'github': '',
+    'bio': 'I am open-minded and enjoy learning and trying new things'
+  },
 ]

@@ -1,21 +1,49 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: var(--color-gray-light);
+  --foreground: var(--color-gray-dark);
+  font-size: 16px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --color-purple-light: #E7D1F4;
+  --color-purple-medium: #4D4C7D;
+  --color-purple-dark: #363062;
+
+  --color-peach-light: #FFB4B5;
+  --color-peach-medium: #E47B75;
+
+  --color-gray-light: #F4EDFA;
+  --color-gray-dark: #140C55;
+
+  --spacing-xl: 8rem; /* 128px */
+  --spacing-lg: 4rem; /* 64px */
+  --spacing-md: 2rem; /* 32px */
+  --spacing-sm: 1rem; /* 16px */
+
+  --text-h1: 3rem;
+  --text-h2: 2rem;
+  --text-h3: 1.5rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  section {
+    @apply pt-lg     /* 4rem padding on top */
+           pb-xl     /* 8rem padding on bottom */
+           px-sm     /* base: 1rem */
+           md:px-lg  /* ≥md: 4rem */
+           lg:px-xl; /* ≥lg: 8rem */
+  }
+
+  h1 {
+    @apply text-h1 font-bold leading-tight;
+  }
+  h2 {
+    @apply text-h2 font-bold;
+  }
+  h3 {
+    @apply text-h3 font-bold;
   }
 }
 

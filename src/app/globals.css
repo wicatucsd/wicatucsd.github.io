@@ -17,10 +17,10 @@
   --color-gray-light: #F4EDFA;
   --color-gray-dark: #140C55;
 
-  --spacing-page: 8rem; /* 128px */
-  --spacing-section: 4rem; /* 64px */
-  --spacing-container: 2rem; /* 32px */
-  --spacing-item: 1rem; /* 16px */
+  --spacing-xl: 8rem; /* 128px */
+  --spacing-lg: 4rem; /* 64px */
+  --spacing-md: 2rem; /* 32px */
+  --spacing-sm: 1rem; /* 16px */
 
   --text-h1: 3rem;
   --text-h2: 2rem;
@@ -29,15 +29,15 @@
 
 @layer base {
   section {
-    @apply pt-section     /* 4rem padding on top */
-           pb-page        /* 8rem padding on bottom */
-           px-item        /* base: 1rem */
-           md:px-section  /* ≥md: 4rem */
-           lg:px-page;    /* ≥lg: 8rem */
+    @apply pt-lg     /* 4rem padding on top */
+           pb-xl     /* 8rem padding on bottom */
+           px-sm     /* base: 1rem */
+           md:px-lg  /* ≥md: 4rem */
+           lg:px-xl; /* ≥lg: 8rem */
   }
 
   h1 {
-    @apply text-h1 font-bold;
+    @apply text-h1 font-bold leading-tight;
   }
   h2 {
     @apply text-h2 font-bold;

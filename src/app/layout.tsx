@@ -1,19 +1,12 @@
 import type { Metadata } from "next";
-import { Onest } from "next/font/google";
+import { onest } from "@/lib/fonts";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
-const onest = Onest({
-  variable: "--font-onest",
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["400", "700"],
-});
-
 export const metadata: Metadata = {
-  title: "WIC Website",
-  description: "A website for WIC",
+  title: "WIC at UCSD",
+  description: "Women in Computing at UC San Diego",
 };
 
 export default function RootLayout({

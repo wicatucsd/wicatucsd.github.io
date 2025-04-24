@@ -1,23 +1,49 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: var(--color-gray-light);
+  --foreground: var(--color-gray-dark);
   font-size: 16px;
 }
 
 @theme {
+  --color-purple-light: #E7D1F4;
+  --color-purple-medium: #4D4C7D;
+  --color-purple-dark: #363062;
+
+  --color-peach-light: #FFB4B5;
+  --color-peach-medium: #E47B75;
+
+  --color-gray-light: #F4EDFA;
+  --color-gray-dark: #140C55;
+
   --spacing-page: 8rem; /* 128px */
   --spacing-section: 4rem; /* 64px */
   --spacing-container: 2rem; /* 32px */
   --spacing-item: 1rem; /* 16px */
+
+  --text-h1: 3rem;
+  --text-h2: 2rem;
+  --text-h3: 1.5rem;
 }
 
-@layer components {
-  main {
-    @apply px-item        /* base: 1rem (or whatever “item” is) */
-           md:px-section  /* ≥md: 4rem (or whatever “section” is) */
-           lg:px-page;    /* ≥lg: 8rem (or whatever “page” is) */
+@layer base {
+  section {
+    @apply pt-section     /* 4rem padding on top */
+           pb-page        /* 8rem padding on bottom */
+           px-item        /* base: 1rem */
+           md:px-section  /* ≥md: 4rem */
+           lg:px-page;    /* ≥lg: 8rem */
+  }
+
+  h1 {
+    @apply text-h1 font-bold;
+  }
+  h2 {
+    @apply text-h2 font-bold;
+  }
+  h3 {
+    @apply text-h3 font-bold;
   }
 }
 

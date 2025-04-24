@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <nav className="flex">
+    <nav className="flex bg-amber-200">
       {/* TODO: Change size of image */}
       <div className="flex-shrink-0">
         <Link href="/">

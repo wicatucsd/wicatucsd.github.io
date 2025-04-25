@@ -19,7 +19,7 @@ export default function MemberPopUp({ imageSrc, name }: MemberPopUpProps) {
     <div>
       <div>
         {/* Add padding to ensure the component's layout accounts for the size of the shadow outline */}
-        <div className="inline-block pr-[10px] pb-[10px]">
+        <div className="pr-[10px] pb-[10px]">
           {/* Outline shadow effect */}
           <div className="
             relative inline-block
@@ -40,6 +40,7 @@ export default function MemberPopUp({ imageSrc, name }: MemberPopUpProps) {
                 width={imageSize}
                 height={imageSize}
                 className="
+                  w-full max-w-[175px]
                   aspect-square object-cover
                   transition-transform duration-350
                   hover:translate-x-[10px] hover:translate-y-[10px]"
@@ -47,7 +48,7 @@ export default function MemberPopUp({ imageSrc, name }: MemberPopUpProps) {
             </div>
           </div>
         </div>
-        <p lang="en" className={`font-bold`}>
+        <p lang="en" className="font-bold max-w-[175px] break-words hyphens-auto whitespace-normal">
           {name}
         </p>
       </div>
@@ -56,7 +57,12 @@ export default function MemberPopUp({ imageSrc, name }: MemberPopUpProps) {
       {isPopUpOpen && (
         <div className="fixed inset-0 z-2 flex items-center justify-center bg-purple-medium/70">
           <div
-            className="bg-white p-md w-2/3 max-w-screen-lg h-96 overflow-y-auto"
+            className="
+              bg-white p-md
+                w-full md:w-2/3 
+                h-100
+                mx-sm
+                overflow-y-auto"
             onClick={e => e.stopPropagation()}
           >
             <Image

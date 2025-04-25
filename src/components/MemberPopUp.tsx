@@ -17,19 +17,35 @@ export default function MemberPopUp({ imageSrc, name }: MemberPopUpProps) {
   return (
     <div>
       <div>
-        <div
-          className="cursor-pointer"
-          onClick={togglePopUp}
+        {/* Outline shadow effect */}
+        <div className="
+          relative inline-block
+          after:content-[''] after:absolute
+          after:top-[10px] after:left-[10px]
+          after:w-full after:h-full
+          after:-z-1
+          after:border-2"
         >
-          <Image
-            src={imageSrc}
-            alt="Member Photo"
-            width={200}
-            height={200}
-            className="aspect-square object-cover"
-          />
+          {/* Image */}
+          <div
+            className="cursor-pointer"
+            onClick={togglePopUp}
+          >
+            <Image
+              src={imageSrc}
+              alt="Member Photo"
+              width={200}
+              height={200}
+              className="
+                aspect-square object-cover
+                transition-transform duration-350
+                hover:translate-x-[10px] hover:translate-y-[10px]"
+            /> 
+          </div>
         </div>
-        <h1 className="text-purple-medium text-2xl font-bold">{name}</h1>
+        <h1 className="text-purple-medium text-2xl font-bold">
+          {name}
+        </h1>
       </div>
 
       {/* Pop-Up */}

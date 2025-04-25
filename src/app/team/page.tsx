@@ -8,7 +8,7 @@ export default function Team() {
   const [deiMembers, setDeiMembers] = useState<Member[]>([]);
 
   // Fetch CSV data and parse into board and DEI members
-  useEffect(() => {git
+  useEffect(() => {
     fetch("/data/members.csv")
       .then((response) => response.text())
       .then((data) => {

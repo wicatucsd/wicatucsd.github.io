@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 import { useState } from "react";
 import Image from "next/image";
 
@@ -9,6 +9,7 @@ type MemberPopUpProps = {
 
 export default function MemberPopUp({ imageSrc, name }: MemberPopUpProps) {
   const [isPopUpOpen, setIsPopUpOpen] = useState(false);
+  const imageSize = 175; // Size of the image in pixels
 
   const togglePopUp = () => {
     setIsPopUpOpen(!isPopUpOpen);
@@ -17,35 +18,38 @@ export default function MemberPopUp({ imageSrc, name }: MemberPopUpProps) {
   return (
     <div>
       <div>
-        {/* Outline shadow effect */}
-        <div className="
-          relative inline-block
-          after:content-[''] after:absolute
-          after:top-[10px] after:left-[10px]
-          after:w-full after:h-full
-          after:-z-1
-          after:border-2"
-        >
-          {/* Image */}
-          <div
-            className="cursor-pointer"
-            onClick={togglePopUp}
+        {/* Add padding to ensure the component's layout accounts for the size of the shadow outline */}
+        <div className="inline-block pr-[10px] pb-[10px]">
+          {/* Outline shadow effect */}
+          <div className="
+            relative inline-block
+            after:content-[''] after:absolute
+            after:top-[10px] after:left-[10px]
+            after:w-full after:h-full
+            after:-z-1
+            after:border-2"
           >
-            <Image
-              src={imageSrc}
-              alt="Member Photo"
-              width={200}
-              height={200}
-              className="
-                aspect-square object-cover
-                transition-transform duration-350
-                hover:translate-x-[10px] hover:translate-y-[10px]"
-            /> 
+            {/* Image */}
+            <div
+              className="cursor-pointer"
+              onClick={togglePopUp}
+            >
+              <Image
+                src={imageSrc}
+                alt="Member Photo"
+                width={imageSize}
+                height={imageSize}
+                className="
+                  aspect-square object-cover
+                  transition-transform duration-350
+                  hover:translate-x-[10px] hover:translate-y-[10px]"
+              />
+            </div>
           </div>
         </div>
-        <h1 className="text-purple-medium text-2xl font-bold">
+        <p lang="en" className={`font-bold`}>
           {name}
-        </h1>
+        </p>
       </div>
 
       {/* Pop-Up */}
@@ -62,7 +66,7 @@ export default function MemberPopUp({ imageSrc, name }: MemberPopUpProps) {
               height={250}
               className="aspect-square object-cover"
             />
-            <h1 className="text-purple-medium text-2xl font-bold">{name}</h1>
+            <h3>{name}</h3>
             <button
               className="mt-4 px-4 py-2 bg-purple-medium text-white rounded-md hover:bg-purple-dark"
               onClick={togglePopUp}

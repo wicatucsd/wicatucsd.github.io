@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import Papa from "papaparse";
 import MemberGallery from "@/components/MemberGallery";
 import { Member } from '@/types/index';
 
@@ -7,29 +8,21 @@ export default function Team() {
   const [boardMembers, setBoardMembers] = useState<Member[]>([]);
   const [deiMembers, setDeiMembers] = useState<Member[]>([]);
 
-  // Fetch CSV data and parse into board and DEI members
+  // Fetch and parse CSV data
   useEffect(() => {
     fetch("/data/members.csv")
       .then((response) => response.text())
-      .then((data) => {
-        const parsedMembers = parseMemberCSV(data);
-        setBoardMembers(parsedMembers.filter((member) => member.type === "board"));
-        setDeiMembers(parsedMembers.filter((member) => member.type === "dei"));
+      .then((csvData) => {
+        Papa.parse(csvData, {
+          header: true, // Use the first row as the header
+          complete: (result) => {
+            const parsedMembers = result.data as Member[];
+            setBoardMembers(parsedMembers.filter((member) => member.type === "board"));
+            setDeiMembers(parsedMembers.filter((member) => member.type === "dei"));
+          },
+        });
       });
   }, []);
-
-  // Parses CSV data into Member objects
-  const parseMemberCSV = (csvData: string): Member[] => {
-    const rows = csvData.split("\n").slice(1);
-    return rows.map((row) => {
-      const [type, name, imageSrc] = row.split(",");
-      return {
-        type: type.trim(),
-        name: name.trim(),
-        imageSrc: imageSrc.trim(),
-      };
-    });
-  };
 
   return (
     <div>

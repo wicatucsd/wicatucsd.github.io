@@ -22,9 +22,9 @@ export default function MemberGallery({ members }: MemberGalleryProps) {
       place-items-center items-start
       "
     >
-      {members.map((member: { imageSrc: string; name: string; }, index: Key | null | undefined) => (
+      {members.map((member, index: Key | null | undefined) => (
         <div className="" key={index}>
-           <MemberPopUp key={index} imageSrc={member.imageSrc} name={member.name} />
+           <MemberPopUp key={index} member={member}/>
         </div>
       ))}
    </div>

@@ -23,14 +23,14 @@ export default function MemberPopUp({ member }: MemberPopUpProps) {
         {/* Add padding to ensure the component's layout accounts for the size of the shadow outline */}
         <div className="pr-[10px] pb-[10px]">
           {/* Outline shadow effect */}
-          <div className="
+            <div className="
             relative inline-block
             after:content-[''] after:absolute
             after:top-[10px] after:left-[10px]
             after:w-full after:h-full
             after:-z-1
-            after:border-2"
-          >
+            after:border-2 after:border-purple-medium
+            ">
             {/* Image */}
             <div
               className="cursor-pointer"
@@ -79,7 +79,7 @@ export default function MemberPopUp({ member }: MemberPopUpProps) {
                 ✕
               </button>
             </div>
-            <div className="flex gap-sm">
+            <div className="flex flex-col-reverse items-center md:flex-row md:items-start gap-sm">
               <div>
                 <Image
                   src={member.image}

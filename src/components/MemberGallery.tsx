@@ -16,9 +16,6 @@ export default function MemberGallery({ members }: MemberGalleryProps) {
       md:grid-cols-3 
       lg:grid-cols-4 
       gap-md
-      px-md
-      md:px-lg
-      lg:px-xl
       place-items-center items-start
       "
     >

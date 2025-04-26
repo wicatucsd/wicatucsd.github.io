@@ -63,7 +63,7 @@ export default function MemberPopUp({ member }: MemberPopUpProps) {
         <div className="fixed inset-0 z-2 flex items-center justify-center bg-purple-medium/70">
           <div
             className="
-              bg-white p-md pt-sm
+              bg-purple-light p-md pt-sm
               w-full md:w-2/3 
               h-100
               mx-sm
@@ -72,7 +72,7 @@ export default function MemberPopUp({ member }: MemberPopUpProps) {
           >
             <div className="flex justify-end">
               <button
-                className="text-gray-dark font-bold p-2 text-xl cursor-pointer"
+                className={`text-gray-dark font-bold p-2 text-xl cursor-pointer transition-transform duration-200 hover:scale-${100*hoverScale}`}
                 onClick={togglePopUp}
                 aria-label="Close"
               >

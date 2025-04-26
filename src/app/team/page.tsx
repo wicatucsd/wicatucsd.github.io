@@ -26,14 +26,14 @@ export default function Team() {
 
   return (
     <section className="flex flex-col items-center gap-md">
-      <h1 className="text-purple-medium">Meet the Team</h1>
+      <h1>Meet the Team</h1>
       <div className="flex flex-col gap-md">
         <div className="flex flex-col items-center gap-md">
-          <h2 className="text-purple-medium">Board Members</h2>
+          <h2>Board Members</h2>
           <MemberGallery members={boardMembers} />
         </div>
         <div className="flex flex-col items-center gap-md">
-          <h2 className="text-purple-medium mb-sm">DEI Committee</h2>
+          <h2>DEI Committee</h2>
           <MemberGallery members={deiMembers} />
         </div>
       </div>

@@ -29,7 +29,7 @@ export default function MemberPopUp({ member }: MemberPopUpProps) {
             after:top-[10px] after:left-[10px]
             after:w-full after:h-full
             after:-z-1
-            after:border-2 after:border-purple-medium
+            after:border-2 after:border-primary-medium
             ">
             {/* Image */}
             <div
@@ -60,10 +60,10 @@ export default function MemberPopUp({ member }: MemberPopUpProps) {
 
       {/* Pop-Up */}
       {isPopUpOpen && (
-        <div className="fixed inset-0 z-2 flex items-center justify-center bg-purple-medium/70">
+        <div className="fixed inset-0 z-2 flex items-center justify-center bg-primary-medium/70">
           <div
             className="
-              bg-purple-light p-md pt-sm
+              bg-primary-light p-md pt-sm
               w-full md:w-2/3 
               h-100
               mx-sm
@@ -91,15 +91,15 @@ export default function MemberPopUp({ member }: MemberPopUpProps) {
               </div>
               <div className="flex flex-col gap-sm">
                 <div>
-                  <h2>{member.name}</h2>
-                  <h3>{member.position}</h3>
+                  <h2 className="text-primary-dark">{member.name}</h2>
+                  <h3 className="text-primary-medium">{member.position}</h3>
                   <p>{member.year}</p>
                 </div>
                 <div className="flex flex-col gap-sm">
-                  <p><b>Favorite language:</b> {member.language}</p>
-                  <p><b>Favorite spot:</b> {member.spot}</p>
-                  <p><b>Best part of WIC:</b> {member.wiclove}</p>
-                  <p><b>Fun fact:</b> {member.bio}</p>
+                  <p><b className="text-primary-medium">Favorite language:</b> {member.language}</p>
+                  <p><b className="text-primary-medium">Favorite spot:</b> {member.spot}</p>
+                  <p><b className="text-primary-medium">Best part of WIC:</b> {member.wiclove}</p>
+                  <p><b className="text-primary-medium">Fun fact:</b> {member.bio}</p>
                   <div className="flex gap-md items-center">
                     {member.email && (
                       <a href={`mailto:${member.email}`} target="_blank" rel="noopener noreferrer">

@@ -61,7 +61,7 @@ export default function ProjectPopUp({ project }: ProjectPopUpProps) {
         <div className="fixed inset-0 z-2 flex items-center justify-center bg-primary-medium/70">
           <div
             className="
-              bg-primary-light p-md pt-sm
+              bg-gray-light p-md pt-sm
               w-full md:w-2/3 
               h-100
               mx-sm

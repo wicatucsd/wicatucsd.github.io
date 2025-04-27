@@ -1,8 +1,28 @@
 "use client";
+import Papa from "papaparse";
+import { useEffect, useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import Project from "@/components/Project";
+import { Project } from "@/types/index";
+import ProjectsGallery from "@/components/ProjectsGallery";
 
 export default function Programs() {
+  const [projects, setProjects] = useState<Project[]>([]);
+
+  // Fetch and parse CSV data
+  useEffect(() => {
+    fetch("/data/projects.csv")
+      .then((response) => response.text())
+      .then((csvData) => {
+        Papa.parse(csvData, {
+          header: true, // Use the first row as the header
+          complete: (result) => {
+            const parsedProjects = result.data as Project[];
+            setProjects(parsedProjects);
+          },
+        });
+      });
+  }, []);
+
   return (
     <main>
       <section>
@@ -12,7 +32,7 @@ export default function Programs() {
         <h1 className="text-primary-light">Beginner's Programming Competition</h1>
         <p>For 4+ years, Women in Computing has been hosting quarterly programming competitions, Beginner's Programming Competition, for 200+ undergraduate students who have not taken upper-division Computer Science or Data Science courses. The students solve 10 questions similar to those used in programming interviews in 3 hours. The competition format is similar to ACM ICPC, where participants brainstorm and pair-program to have fun and win prizes.</p>
         <Tabs className="text-gray-dark">
-            <TabList className="flex justify-between w-full">
+          <TabList className="flex justify-between w-full">
             <Tab
               className="flex-1 text-center bg-primary-dark p-sm font-bold text-primary-light outline-none"
               selectedClassName="bg-primary-light text-primary-medium"
@@ -56,7 +76,7 @@ export default function Programs() {
       </section>
       <section>
         <h1>Project Teams</h1>
-        <Project/>
+        <ProjectsGallery projects={projects}/>
       </section>
     </main>
   );

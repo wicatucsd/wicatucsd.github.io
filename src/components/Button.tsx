@@ -23,8 +23,8 @@ export default function Button({ text, onClick, href, color = "dark" }: ButtonPr
   const buttonClasses = `
     ${inconsolata.className}
     ${color === "dark"
-      ? "bg-peach-light"
-      : "bg-purple-light"
+      ? "bg-secondary-light"
+      : "bg-primary-light"
     }
     text-gray-dark
     relative inline-block
@@ -46,8 +46,8 @@ export default function Button({ text, onClick, href, color = "dark" }: ButtonPr
         before:rounded-full
         before:border-1 
         ${color === "dark"
-          ? "before:border-purple-medium"
-          : "before:border-purple-light"
+          ? "before:border-primary-medium"
+          : "before:border-primary-light"
         }
       `}
     >

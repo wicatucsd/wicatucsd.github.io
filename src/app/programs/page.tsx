@@ -1,5 +1,6 @@
 "use client";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import Project from "@/components/Project";
 
 export default function Programs() {
   return (
@@ -55,6 +56,7 @@ export default function Programs() {
       </section>
       <section>
         <h1>Project Teams</h1>
+        <Project/>
       </section>
     </main>
   );

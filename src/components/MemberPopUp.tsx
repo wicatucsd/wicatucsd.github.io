@@ -11,7 +11,6 @@ export default function MemberPopUp({ member }: MemberPopUpProps) {
   const [isPopUpOpen, setIsPopUpOpen] = useState(false);
   const imageSize = 175; // Size of the image in pixels
   const iconSize = 30; // Size of the icon in pixels
-  const hoverScale = 1.2; // Scale factor for hover effect
 
   const togglePopUp = () => {
     setIsPopUpOpen(!isPopUpOpen);
@@ -72,7 +71,7 @@ export default function MemberPopUp({ member }: MemberPopUpProps) {
           >
             <div className="flex justify-end">
               <button
-                className={`text-gray-dark font-bold p-2 text-xl cursor-pointer transition-transform duration-200 hover:scale-${100*hoverScale}`}
+                className="text-gray-dark font-bold p-2 text-xl cursor-pointer transition-transform duration-200 hover:scale-120"
                 onClick={togglePopUp}
                 aria-label="Close"
               >
@@ -108,7 +107,7 @@ export default function MemberPopUp({ member }: MemberPopUpProps) {
                           alt="Email"
                           width={iconSize}
                           height={iconSize}
-                          className={`transition-transform duration-200 hover:scale-${100*hoverScale}`}
+                          className="transition-transform duration-200 hover:scale-120"
                         />
                       </a>
                     )}
@@ -119,7 +118,7 @@ export default function MemberPopUp({ member }: MemberPopUpProps) {
                           alt="Instagram"
                           width={iconSize}
                           height={iconSize}
-                          className={`transition-transform duration-200 hover:scale-${100*hoverScale}`}
+                          className="transition-transform duration-200 hover:scale-120"
                         />
                       </a>
                     )}
@@ -130,7 +129,7 @@ export default function MemberPopUp({ member }: MemberPopUpProps) {
                           alt="LinkedIn"
                           width={iconSize}
                           height={iconSize}
-                          className={`transition-transform duration-200 hover:scale-${100*hoverScale}`}
+                          className="transition-transform duration-200 hover:scale-120"
                         />
                       </a>
                     )}
@@ -141,7 +140,7 @@ export default function MemberPopUp({ member }: MemberPopUpProps) {
                           alt="GitHub"
                           width={iconSize}
                           height={iconSize}
-                          className={`transition-transform duration-200 hover:scale-${100*hoverScale}`}
+                          className="transition-transform duration-200 hover:scale-120"
                         />
                       </a>
                     )}
@@ -152,7 +151,7 @@ export default function MemberPopUp({ member }: MemberPopUpProps) {
                           alt="Website"
                           width={iconSize}
                           height={iconSize}
-                          className={`transition-transform duration-200 hover:scale-${100*hoverScale}`}
+                          className="transition-transform duration-200 hover:scale-120"
                         />
                       </a>
                     )}

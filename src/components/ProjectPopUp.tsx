@@ -108,7 +108,7 @@ export default function ProjectPopUp({ project }: ProjectPopUpProps) {
                     {project.link && (
                       <a href={project.link} target="_blank" rel="noopener noreferrer">
                       <Image
-                        src="/images/icons/website.svg"
+                        src="/images/icons/website.png"
                         alt="Project Link"
                         width={iconSize}
                         height={iconSize}
@@ -119,7 +119,7 @@ export default function ProjectPopUp({ project }: ProjectPopUpProps) {
                     {project.github && (
                       <a href={project.link} target="_blank" rel="noopener noreferrer">
                       <Image
-                        src="/images/icons/github.svg"
+                        src="/images/icons/github.png"
                         alt="Project Link"
                         width={iconSize}
                         height={iconSize}

@@ -56,7 +56,7 @@
   section {
     @apply pt-lg     /* 4rem padding on top */
            pb-xl     /* 8rem padding on bottom */
-           px-sm     /* base: 1rem */
+           px-md     /* base: 1rem */
            md:px-lg  /* ≥md: 4rem */
            lg:px-xl; /* ≥lg: 8rem */
   }

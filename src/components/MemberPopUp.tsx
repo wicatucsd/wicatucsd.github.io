@@ -103,7 +103,7 @@ export default function MemberPopUp({ member }: MemberPopUpProps) {
                     {member.email && (
                       <a href={`mailto:${member.email}`} target="_blank" rel="noopener noreferrer">
                         <Image
-                          src="/images/icons/email.svg"
+                          src="/images/icons/email.png"
                           alt="Email"
                           width={iconSize}
                           height={iconSize}
@@ -114,7 +114,7 @@ export default function MemberPopUp({ member }: MemberPopUpProps) {
                     {member.instagram && (
                       <a href={member.instagram} target="_blank" rel="noopener noreferrer">
                         <Image
-                          src="/images/icons/instagram.svg"
+                          src="/images/icons/instagram.png"
                           alt="Instagram"
                           width={iconSize}
                           height={iconSize}
@@ -125,7 +125,7 @@ export default function MemberPopUp({ member }: MemberPopUpProps) {
                     {member.linkedin && (
                       <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
                         <Image
-                          src="/images/icons/linkedin.svg"
+                          src="/images/icons/linkedin.png"
                           alt="LinkedIn"
                           width={iconSize}
                           height={iconSize}
@@ -136,7 +136,7 @@ export default function MemberPopUp({ member }: MemberPopUpProps) {
                     {member.github && (
                       <a href={member.github} target="_blank" rel="noopener noreferrer">
                         <Image
-                          src="/images/icons/github.svg"
+                          src="/images/icons/github.png"
                           alt="GitHub"
                           width={iconSize}
                           height={iconSize}
@@ -147,7 +147,7 @@ export default function MemberPopUp({ member }: MemberPopUpProps) {
                     {member.website && (
                       <a href={member.website} target="_blank" rel="noopener noreferrer">
                         <Image
-                          src="/images/icons/website.svg"
+                          src="/images/icons/website.png"
                           alt="Website"
                           width={iconSize}
                           height={iconSize}

@@ -61,7 +61,7 @@ export default function ProjectPopUp({ project }: ProjectPopUpProps) {
         <div className="fixed inset-0 z-2 flex items-center justify-center bg-primary-medium/70">
           <div
             className="
-              bg-primary-light p-md pt-sm
+              bg-gray-light p-md pt-sm
               w-full md:w-2/3 
               h-100
               mx-sm
@@ -108,7 +108,7 @@ export default function ProjectPopUp({ project }: ProjectPopUpProps) {
                     {project.link && (
                       <a href={project.link} target="_blank" rel="noopener noreferrer">
                       <Image
-                        src="/images/icons/website.svg"
+                        src="/images/icons/website.png"
                         alt="Project Link"
                         width={iconSize}
                         height={iconSize}
@@ -119,7 +119,7 @@ export default function ProjectPopUp({ project }: ProjectPopUpProps) {
                     {project.github && (
                       <a href={project.link} target="_blank" rel="noopener noreferrer">
                       <Image
-                        src="/images/icons/github.svg"
+                        src="/images/icons/github.png"
                         alt="Project Link"
                         width={iconSize}
                         height={iconSize}

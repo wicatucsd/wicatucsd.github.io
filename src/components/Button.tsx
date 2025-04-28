@@ -10,7 +10,7 @@
  *
  * @returns {JSX.Element} A styled button or link element with hover effects and optional shadow.
  */
-import { inconsolata } from "@/lib/fonts";
+import { inconsolata } from "@/assets/fonts";
 
 type ButtonProps = {
   text: string;

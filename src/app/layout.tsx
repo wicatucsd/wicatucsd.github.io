@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { onest } from "@/lib/fonts";
+import { onest } from "@/assets/fonts";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";

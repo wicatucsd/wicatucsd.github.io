@@ -13,6 +13,7 @@ import w24 from "../static/bpc_w24.png";
 import w25 from "../static/bpc_w25.png";
 import sp24 from "../static/bpc_sp24.png";
 import fa24 from "../static/bpc_fa24.png";
+import sp25 from "../static/bpc_sp25.png";
 import janestreet from "../static/sponsors/janestreet.png";
 import ucsdcse from "../static/sponsors/ucsdcse.png";
 import intuit from "../static/sponsors/intuit.png";
@@ -141,6 +142,29 @@ class GetInvolved extends React.Component {
                   <h3>Previous BPC Events</h3>
 
                   <Row>
+                  <Col xs={8} md={4}>
+                      <LazyLoadImage src={w25} alt={"Winter 2025"} />
+                      <p>
+                        <b>Winter 2025:</b>
+                      </p>
+                      <p>
+                        <a
+                          href="https://docs.google.com/document/d/1ee5F2VXfXQPOgh32mfm4HDUkPQ2ovI_zKfxm02u2Uz0/edit?usp=sharing"
+                          target="_blank"
+                        >
+                          Final Problemset
+                        </a>
+                      </p>
+                      <p>
+                        <a
+                          href="https://www.dropbox.com/scl/fo/fz0sanrg2qwa1rcrswqyi/AJS9nuOf0cz_FUSy7xK1Aq8?rlkey=ey9itmthe7j2anfvkn6nscxbq&st=bia4jo7k&dl=0"
+                          target="_blank"
+                        >
+                          Solution
+                        </a>
+                      </p>
+                      <br />
+                    </Col>
                     <Col xs={8} md={4}>
                       <LazyLoadImage src={fa24} alt={"Fall 2024"} />
                       <p>
@@ -187,51 +211,28 @@ class GetInvolved extends React.Component {
                       </p>
                       <br />
                     </Col>
-                    <Col xs={8} md={4}>
-                      <LazyLoadImage src={w24} alt={"Winter 2024"} />
-                      <p>
-                        <b>Winter 2024:</b>
-                      </p>
-                      <p>
-                        <a
-                          href="https://drive.google.com/file/d/1_EvRKp0cUjfmGgb48Jobb4J0Z2IedgI-/view?usp=sharing"
-                          target="_blank"
-                        >
-                          Final Problemset
-                        </a>
-                      </p>
-                      <p>
-                        <a
-                          href="https://drive.google.com/drive/folders/1xVt2434ppDCY0iWD50Wd13r6zToY1G5k?usp=drive_link"
-                          target="_blank"
-                        >
-                          Solution
-                        </a>
-                      </p>
-                      <br />
-                    </Col>
                   </Row>
                 </TabPanel>
                 <TabPanel>
-                  <h3>Winter 2025</h3>
+                  <h3>Spring 2025</h3>
                   <Row>
                     <Col xs={12} md={6}>
                       <p id="upcomingBpcDesc">
-                        This quarter's BPC is a a Sherlock-themed beginner-level programming competition in association with Northrop Grumman for UCSD undergrads who haven’t taken upper-div CSE or DSC courses. Everyone is welcome to participate! There will be a guest speaker from Northrop Grumman talking about their experience from 2:15 - 2:45pm. Form teams of 1-2 and attempt to solve 10 problems in 3 hours!
+                      An Inside Out themed beginner-level programming competition for UCSD undergrads who haven't taken upper-div CSE or DSC courses. Form teams of 1-2 and attempt to solve 10 problems in 3 hours!
                       </p>
                       <Button
                         type="primary"
                         text="Participant Sign-Up"
-                        toLink="https://forms.gle/ZXvFNseTviJrbFGu7"
+                        toLink="https://docs.google.com/forms/d/e/1FAIpQLSe4To8KxAjVOEAEF4RMfOIACiEdEHrmmZ38GNQc-GGiuJYSbA/viewform"
                       />
                       <Button
                         type="primary"
                         text="Volunteer Sign-Up"
-                        toLink="https://forms.gle/6FLNJ9R9VhCxt18s9"
+                        toLink="https://docs.google.com/forms/d/e/1FAIpQLScF6uiETJ91DMQUs0I66e3yeq6-bbsf6AU75mMaEh4nQM8HAg/viewform"
                       />
                     </Col>
                     <Col xs={12} md={6}>
-                      <LazyLoadImage src={w25} alt={"Winter 2025"} />
+                      <LazyLoadImage src={sp25} alt={"Spring 2025"} />
                     </Col>
                   </Row>
 

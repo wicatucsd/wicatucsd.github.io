@@ -80,11 +80,13 @@ export default function Footer() {
             </div>
             <div className='flex-1'>
               <h3 className='text-primary-light'>Contact Us</h3>
-              <iframe
-                src="https://form.typeform.com/to/GKKZfJYR?hide_footer=true"
-                width="100%"
-                height="350"
-              ></iframe>
+              <div tabIndex={-1} id="typeform-embed-anchor" >
+                <iframe
+                  src="https://form.typeform.com/to/GKKZfJYR?hide_footer=true?disable-auto-focus=true"
+                  width="100%"
+                  height="350"
+                ></iframe>
+              </div>
             </div>
           </div>
           <div className='flex flex-col gap-lg items-center'>

@@ -13,6 +13,7 @@ export default function ProjectsGallery({ projects }: ProjectsGalleryProps) {
         grid
         grid-cols-1
         md:grid-cols-2
+        xl:grid-cols-3
         gap-md
         place-items-center items-start
       "

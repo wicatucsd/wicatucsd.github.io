@@ -11,6 +11,7 @@
  * @returns {JSX.Element} A styled button or link element with hover effects and optional shadow.
  */
 import { inconsolata } from "@/assets/fonts";
+import Link from "next/link";
 
 type ButtonProps = {
   text: string;
@@ -52,14 +53,22 @@ export default function Button({ text, onClick, href, color = "dark" }: ButtonPr
       `}
     >
       {href ? (
-        <a
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={buttonClasses}
-        >
-          {text}
-        </a>
+        href.startsWith("/") ? (
+          // Use Link component for internal navigation
+          <Link href={href} className={buttonClasses}>
+            {text}
+          </Link>
+        ) : (
+          // Use anchor tag for external links
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={buttonClasses}
+          >
+            {text}
+          </a>
+        )
       ) : (
         <button onClick={onClick} className={buttonClasses}>
           {text}

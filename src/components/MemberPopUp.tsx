@@ -41,7 +41,7 @@ export default function MemberPopUp({ member }: MemberPopUpProps) {
                 width={imageSize}
                 height={imageSize}
                 className={`
-                w-full max-w-[${imageSize}px]
+                w-full max-w-[175px]
                 aspect-square object-cover
                 transition-transform duration-350
                 hover:translate-x-[10px] hover:translate-y-[10px]`}
@@ -49,10 +49,11 @@ export default function MemberPopUp({ member }: MemberPopUpProps) {
             </div>
           </div>
         </div>
-        <p lang="en" className={`font-bold max-w-[${imageSize}px] break-words hyphens-auto whitespace-normal`}>
+        {/* Make max width the same as imageSize. Hardcoded because it doesn't seem to work dynamically */}
+        <p lang="en" className={`font-bold max-w-[175px] break-words hyphens-auto whitespace-normal`}>
           {member.name}
         </p>
-        <p lang="en" className={`max-w-[${imageSize}px] break-words hyphens-auto whitespace-normal`}>
+        <p lang="en" className={`max-w-[175px] break-words hyphens-auto whitespace-normal`}>
           {member.position}
         </p>
       </div>
@@ -64,7 +65,7 @@ export default function MemberPopUp({ member }: MemberPopUpProps) {
             className="
               bg-primary-light p-md pt-sm
               w-full md:w-2/3 
-              h-100
+              h-125
               mx-sm
               overflow-y-auto"
             onClick={e => e.stopPropagation()}

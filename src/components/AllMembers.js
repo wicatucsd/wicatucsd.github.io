@@ -312,7 +312,7 @@ export const all_members = [
     'name': 'Jenny Lam',
     'position': 'Web Development Chair',
     'year': 'Sixth College, 4th Year',
-    'language': 'Python',
+    'language': 'Java',
     'spot': 'DIB',
     'wiclove': 'The friends and connections I made through WIC!',
     'email': '',

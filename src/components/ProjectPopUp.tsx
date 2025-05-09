@@ -63,7 +63,7 @@ export default function ProjectPopUp({ project }: ProjectPopUpProps) {
             className="
               bg-gray-light p-md pt-sm
               w-full md:w-2/3 
-              h-100
+              h-125
               mx-sm
               overflow-y-auto"
             onClick={e => e.stopPropagation()}

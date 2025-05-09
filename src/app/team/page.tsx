@@ -9,6 +9,7 @@ export default function Team() {
   const [deiMembers, setDeiMembers] = useState<Member[]>([]);
 
   // Fetch and parse CSV data
+  // Optional TODO: Split board and committee members into separate CSV files so we can reuse the useCsvData hook
   useEffect(() => {
     fetch("/data/members.csv")
       .then((response) => response.text())

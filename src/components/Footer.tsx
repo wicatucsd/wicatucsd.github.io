@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className='bg-primary-medium text-primary-light'>
       <section className='flex flex-col gap-md items-center'>
-        <h1 className='text-primary-light'>Connect with Us</h1>
+        <h1 className='text-primary-light text-center'>Connect with Us</h1>
         <div className='flex flex-col gap-lg'>
           <div className='flex flex-col md:flex-row gap-lg w-full'>
             <div className='flex flex-col gap-md'>

@@ -13,9 +13,9 @@ export default function Home() {
 
   return (
     <main>
-      <section className="flex justify-between items-center bg-gray-light text-gray-dark gap-md">
+      <section className="flex flex-col sm:flex-row justify-between items-center bg-gray-light text-gray-dark gap-md">
         <div className="flex flex-col items-start gap-sm">
-          <h1>Women who code write the future.</h1>
+          <h1 className="text-start">Women who code write the future.</h1>
           <p>We're <b>Women in Computing at UC San Diego</b> - coders and engineers, of all genders, who support the female presence in computing.</p>
           <Button
             text="Join Us"

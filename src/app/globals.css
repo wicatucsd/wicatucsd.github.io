@@ -62,7 +62,7 @@
   }
 
   h1 {
-    @apply text-h1 font-bold leading-tight;
+    @apply text-h1 font-bold leading-tight text-center;
     color: var(--color-primary-medium);
   }
   h2 {

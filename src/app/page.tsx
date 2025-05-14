@@ -16,7 +16,7 @@ export default function Home() {
       <section className="flex flex-col sm:flex-row justify-between items-center bg-gray-light text-gray-dark gap-md">
         <div className="flex flex-col items-start gap-sm">
           <h1 className="text-start">Women who code write the future.</h1>
-          <p>We're <b>Women in Computing at UC San Diego</b> - coders and engineers, of all genders, who support the female presence in computing.</p>
+          <p>We&apos;re <b>Women in Computing at UC San Diego</b> - coders and engineers, of all genders, who support the female presence in computing.</p>
           <Button
             text="Join Us"
             href="https://linktr.ee/wicucsd"
@@ -32,7 +32,7 @@ export default function Home() {
         </div>
       </section>
       <section className="flex flex-col items-center bg-primary-medium text-gray-light gap-lg">
-        <h1 className="text-primary-light">What's WIC all about?</h1>
+        <h1 className="text-primary-light">What&apos;s WIC all about?</h1>
         <div className="flex flex-wrap gap-lg justify-center">
           <div className="flex flex-col items-start w-[300px] gap-2">
             <Image
@@ -90,7 +90,7 @@ export default function Home() {
               height={300}
               className="object-cover flex-none"
             />  
-            <h2 className="text-primary-light break-words">Beginner's Programming Competition</h2>
+            <h2 className="text-primary-light break-words">Beginner&apos;s Programming Competition</h2>
             <p className="break-words">This is a paragraph</p>
             <Button
               text="Learn More"

@@ -17,11 +17,11 @@ export default function Navbar() {
       </div>
 
       <ul className="flex space-x-md">
-        <li><Link href="/about">About</Link></li>
-        <li><Link href="/team">Team</Link></li>
-        <li><Link href="/events">Events</Link></li>
-        <li><Link href="/resources">Resources</Link></li>
-        <li><Link href="/programs">Get Involved</Link></li>
+        <li><Link href="/about" className="font-bold text-primary-medium hover:text-gray-dark">About</Link></li>
+        <li><Link href="/team" className="font-bold text-primary-medium hover:text-gray-dark">Team</Link></li>
+        <li><Link href="/events" className="font-bold text-primary-medium hover:text-gray-dark">Events</Link></li>
+        <li><Link href="/resources" className="font-bold text-primary-medium hover:text-gray-dark">Resources</Link></li>
+        <li><Link href="/programs" className="font-bold text-primary-medium hover:text-gray-dark">Get Involved</Link></li>
       </ul>
     </nav>
   );

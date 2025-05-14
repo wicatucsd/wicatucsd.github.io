@@ -10,7 +10,7 @@ export default function Resources() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-md">
           <div className="flex flex-col items-start gap-sm">
             <h3>Grace Hopper Celebration</h3>
-            <p>The <CustomLink href="https://ghc.anitab.org/" text="Grace Hopper Conference (GHC)"/> is the world's largest women in tech event. GHC celebrates the achievements of women in technology and aims to inspire women in the tech industry. GHC takes place in the fall and WIC offers scholarships for members to attend the conference. Be on the look-out for scholarship applications!</p>
+            <p>The <CustomLink href="https://ghc.anitab.org/" text="Grace Hopper Conference (GHC)"/> is the world&apos;s largest women in tech event. GHC celebrates the achievements of women in technology and aims to inspire women in the tech industry. GHC takes place in the fall and WIC offers scholarships for members to attend the conference. Be on the look-out for scholarship applications!</p>
             <Image
               src="/images/members/placeholder_image.png"
               alt="Grace Hopper Celebration"

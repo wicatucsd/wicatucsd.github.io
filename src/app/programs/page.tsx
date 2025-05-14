@@ -15,8 +15,8 @@ export default function Programs() {
         <h1>Women in tech quote</h1>
       </section>
       <section id="bpc" className="bg-primary-medium text-gray-light flex flex-col gap-md">
-        <h1 className="text-primary-light">Beginner's Programming Competition</h1>
-        <p>For 4+ years, Women in Computing has been hosting quarterly programming competitions, Beginner's Programming Competition, for 200+ undergraduate students who have not taken upper-division Computer Science or Data Science courses. The students solve 10 questions similar to those used in programming interviews in 3 hours. The competition format is similar to ACM ICPC, where participants brainstorm and pair-program to have fun and win prizes.</p>
+        <h1 className="text-primary-light">Beginner&apos;s Programming Competition</h1>
+        <p>For 4+ years, Women in Computing has been hosting quarterly programming competitions, Beginner&apos;s Programming Competition, for 200+ undergraduate students who have not taken upper-division Computer Science or Data Science courses. The students solve 10 questions similar to those used in programming interviews in 3 hours. The competition format is similar to ACM ICPC, where participants brainstorm and pair-program to have fun and win prizes.</p>
         <Tabs className="text-gray-dark">
           <TabList className="flex justify-between w-full">
             <Tab

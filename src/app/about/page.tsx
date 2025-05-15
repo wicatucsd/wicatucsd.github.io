@@ -6,7 +6,7 @@ export default function About() {
       <section className="flex flex-col items-center gap-lg">
         <h1 className="text-start">{`{Women} by day, {hackers} by night`}</h1>
         <Image
-          src="/images/group_placeholder.png"
+          src="/images/big_group_picture.png"
           alt="people"
           width={1000}
           height={1000}
@@ -61,16 +61,24 @@ export default function About() {
           <div className="flex-1 flex flex-col items-start gap-sm">
             <h2>Join WIC Board</h2>
             <p>
-              Women in Computing (WIC) at UC San Diego is dedicated to fostering an inclusive and supportive environment for women in technology. Our mission is to cultivate the next generation of women in tech, promote a love for STEM, and improve the retention of women in computing-related fields.
-              We welcome all individuals—regardless of identity, major, or experience level—who are passionate about technology and diversity in computing.
+              Be part of a passionate team dedicated to empowering women and underrepresented groups in tech! As a board member, you’ll gain leadership experience, plan impactful events, grow your network, and help foster an inclusive community in computing. Whether you’re interested in outreach, event planning, tech, or advocacy, there’s a place for you.
+              
+            </p>
+            <p>
+            Board applications open at the end of winter quarter and voting takes place at the beginning of spring quarter. You must be have been an active member for either fall or winter quarter of the current school year to apply.
             </p>
           </div>
           <div className="flex-1 flex flex-col items-start gap-sm">
             <h2>Join a WIC Committee</h2>
             <p>
-              Women in Computing (WIC) at UC San Diego is dedicated to fostering an inclusive and supportive environment for women in technology. Our mission is to cultivate the next generation of women in tech, promote a love for STEM, and improve the retention of women in computing-related fields.
-              We welcome all individuals—regardless of identity, major, or experience level—who are passionate about technology and diversity in computing.
+              Committees support board members with planning events, organizing initiatives, and keeping things running smoothly. It’s a great way to contribute, build skills, meet new people, and get a behind-the-scenes look at how WIC operates. No prior experience necessary!
+              We are recruiting for the following committees:
             </p>
+            <ul className="list-disc pl-5">
+              <li>DEI Committee</li>
+              <li>BPC Committee</li>
+              <li>Social Committee</li>
+            </ul>
           </div>
         </div>
       </section>

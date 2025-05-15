@@ -12,7 +12,7 @@ export default function Footer() {
           <div className='flex flex-col md:flex-row gap-lg w-full'>
             <div className='flex flex-col gap-md'>
                 <div className='flex gap-sm justify-center md:flex-col md:gap-1'>
-                  <a href="https://www.instagram.com/wicucsd" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.instagram.com/wicatucsd" target="_blank" rel="noopener noreferrer">
                     <div className="inline-flex items-center gap-sm transition-transform duration-200 hover:scale-120">
                       <Image
                       src="/images/icons/instagram-light.png"
@@ -73,7 +73,7 @@ export default function Footer() {
                 <p>Get weekly updates straight to your mailbox!</p>
                 <Button
                   text="Subscribe"
-                  href='https://forms.gle/2v1Z5G7x4a3Y6z8s9'
+                  href='https://docs.google.com/forms/d/e/1FAIpQLSdsbOIn94i9_XFczuR5WUhNg2aMOFBf6wHbponPkTqyWwmGow/viewform'
                   color='light'
                 />
               </div>

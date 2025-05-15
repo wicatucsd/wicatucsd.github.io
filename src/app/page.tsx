@@ -33,7 +33,7 @@ export default function Home() {
         <div className="flex flex-wrap gap-lg justify-center">
           <div className="flex flex-col items-start w-[300px] gap-2">
             <Image
-              src="/images/homepage_events.png"
+              src="/images/homepage_events.jpg"
               alt="image"
               width={300}
               height={300}

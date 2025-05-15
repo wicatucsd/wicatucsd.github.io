@@ -12,7 +12,7 @@ export default function Resources() {
             <h3>Grace Hopper Celebration</h3>
             <p>The <CustomLink href="https://ghc.anitab.org/" text="Grace Hopper Conference (GHC)"/> is the world&apos;s largest women in tech event. GHC celebrates the achievements of women in technology and aims to inspire women in the tech industry. GHC takes place in the fall and WIC offers scholarships for members to attend the conference. Be on the look-out for scholarship applications!</p>
             <Image
-              src="/images/members/placeholder_image.png"
+              src="/images/ghc.jpeg"
               alt="Grace Hopper Celebration"
               width={400}
               height={400}
@@ -23,8 +23,8 @@ export default function Resources() {
             <h3>Richard Tapia Conference</h3>
             <p>The <CustomLink href="https://tapiaconference.cmd-it.org/" text="Tapia Conference"/> focuses on bringing together students, faculty, researchers, and professionals in computing to celebrate the diversity in computing and connect with others. Taking place in the fall, WIC offers scholarships for members to attend. Be on the look-out for scholarship applications!</p>
             <Image
-              src="/images/members/placeholder_image.png"
-              alt="Grace Hopper Celebration"
+              src="/images/tapia.jpeg"
+              alt="Tapia Conference"
               width={400}
               height={400}
               className="object-cover flex-none"

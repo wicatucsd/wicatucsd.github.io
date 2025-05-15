@@ -1,8 +1,7 @@
 export type Member = {
-  type: string;
   name: string;
   position: string;
-  year: number; // TODO: Change to string
+  year: string;
   language: string;
   spot: string;
   wiclove: string;
@@ -24,4 +23,9 @@ export type Project = {
   link?: string; // Optional project link
   github?: string; // Optional GitHub link
   image?: string; // Optional image path
+};
+
+export type Sponsor = {
+  name: string;
+  image: string;
 };

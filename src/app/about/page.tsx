@@ -4,7 +4,7 @@ export default function About() {
   return (
     <main>
       <section className="flex flex-col items-center gap-lg">
-        <h1 className="text-start">{`{Women} by day, {hackers} by night`}</h1>
+        <h1 className="text-start">{`{Ladies} by day, {hackers} by night`}</h1>
         <Image
           src="/images/big_group_picture.png"
           alt="people"
@@ -77,6 +77,7 @@ export default function About() {
             <ul className="list-disc pl-5">
               <li>DEI Committee</li>
               <li>BPC Committee</li>
+              <li>EDGE Committee</li>
               <li>Social Committee</li>
             </ul>
           </div>

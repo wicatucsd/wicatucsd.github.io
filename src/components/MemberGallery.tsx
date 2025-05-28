@@ -1,4 +1,3 @@
-
 import MemberPopUp from "@/components/MemberPopUp";
 import { Member } from '@/types/index';
 import { Key } from "react";
@@ -8,8 +7,8 @@ type MemberGalleryProps = {
 };
 
 export default function MemberGallery({ members }: MemberGalleryProps) {
-  return (
 
+  return (
    <div className="
       grid
       grid-cols-2 

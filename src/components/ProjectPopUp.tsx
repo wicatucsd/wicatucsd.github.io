@@ -117,7 +117,7 @@ export default function ProjectPopUp({ project }: ProjectPopUpProps) {
                       </a>
                     )}
                     {project.github && (
-                      <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <a href={project.github } target="_blank" rel="noopener noreferrer">
                       <Image
                         src="/images/icons/github.png"
                         alt="Project Link"

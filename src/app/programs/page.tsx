@@ -12,7 +12,7 @@ export default function Programs() {
 
   return (
     <main>
-      <section>
+      <section className="pb-lg">
         <h1>Teach a girl to code and she&apos;ll change the world.</h1>
       </section>
       <section id="bpc" className="bg-primary-medium text-gray-light flex flex-col gap-md">
@@ -130,9 +130,9 @@ export default function Programs() {
         </Tabs>
       </section>
       <section id="edge" className="flex flex-col items-center gap-md">
-        <h1>Empowerment and Development for Girls in Engineering (EDGE)</h1>
+        <h1>Outreach</h1>
         <div className="flex flex-col sm:flex-row gap-md">
-          <div className="flex flex-col items-start gap-sm">
+          <div className="sm:w-1/2 flex flex-col items-start gap-sm">
             <p>
               Empowerment and Development for Girls in Engineering (EDGE) is a mentorship program by WIC at UCSD and SWE at UCSD that aims to inspire and empower high school girls to consider STEM-related careers in order to bridge the gender gap in engineering fields.
               As an EDGE mentor, you will have the opportunity to get paired with a high school mentee and guide them through their journey in STEM. 
@@ -143,11 +143,11 @@ export default function Programs() {
             />
           </div>
           <Image
-            src="/images/members/placeholder_image.png"
+            src="/images/programs_edge.jpg"
             alt="EDGE picture"
             width={500}
             height={500}
-            className="object-cover flex-none"
+            className="sm:w-1/2 object-cover flex-none"
           />
         </div>
       </section>
@@ -155,17 +155,17 @@ export default function Programs() {
         <h1 className="text-primary-light">Mentor-Mentee</h1>
         <div className="flex flex-col sm:flex-row gap-md">
           <Image
-            src="/images/members/placeholder_image.png"
-            alt="EDGE picture"
+            src="/images/programs_mentor_mentee.jpg"
+            alt="Mentor-mentee picture"
             width={500}
             height={500}
-            className="object-cover flex-none"
+            className="sm:w-1/2 object-cover flex-none"
           />
-          <p>
+          <p className="sm:w-1/2">
             WIC Mentor-Mentee is a collaborative partnership between a mentor and mentee that supports mutual growth through the sharing of talents, skills, and experiences. It involves a meaningful investment of time and effort from both parties and serves as a valuable opportunity for personal and professional development.
             Being a part of this program will give you the opportunity to support your peers and help contribute to their undergraduate experience in computing, in addition to giving you a chance to develop a closer relationship with the WIC community here at UCSD!
             Mentors and mentees are paired every fall quarter. Be on the look-out for applications to open in the fall!
-         </p>
+          </p>
         </div>
       </section>
       <section id="project-teams" className="flex flex-col items-center gap-md">

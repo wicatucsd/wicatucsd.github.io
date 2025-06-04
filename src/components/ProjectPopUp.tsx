@@ -31,7 +31,7 @@ export default function ProjectPopUp({ project }: ProjectPopUpProps) {
             {/* Box */}
             <div className="
               p-sm flex flex-col gap-sm
-              cursor-pointer bg-primary-light w-[350px]
+              cursor-pointer bg-primary-light w-[330px]
               transition-transform duration-350
               hover:translate-x-[10px] hover:translate-y-[10px]
               "
@@ -98,9 +98,6 @@ export default function ProjectPopUp({ project }: ProjectPopUpProps) {
                   </div>
                   <div className="flex flex-col gap-sm">
                     <p><b className="text-primary-medium">By:</b> {project.team}</p>
-                    {project.mentors && (
-                    <p><b className="text-primary-medium">Mentors:</b> {project.mentors}</p>
-                    )}
                     {project.description && (
                     <p>{project.description}</p>
                     )}
@@ -117,7 +114,7 @@ export default function ProjectPopUp({ project }: ProjectPopUpProps) {
                       </a>
                     )}
                     {project.github && (
-                      <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <a href={project.github } target="_blank" rel="noopener noreferrer">
                       <Image
                         src="/images/icons/github.png"
                         alt="Project Link"

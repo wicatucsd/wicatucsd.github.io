@@ -13,7 +13,7 @@ export default function Events() {
             text="Add it to Your Calendar"
             href="https://calendar.google.com/calendar/u/2/r?cid=NjYwZDBmNmE3OTg0MjZhOTRhMTc3NzUzZWMzNWI0ZGE3ZWE5ZTgyYzY5ZmQ0YjgxYTk1Y2E5MTgzZTA1NDA1YUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
           />
-          <div className="w-full bg-primary-light p-md z-0">
+          <div className="w-full p-md z-0">
             <Calendar/>
           </div>
         </div>

@@ -14,11 +14,17 @@ export type Member = {
   image: string;
 };
 
+export type PreviousMember = {
+  name: string;
+  position: string;
+  year: string;
+  image: string;
+}
+
 export type Project = {
   name: string; // Project title
   year: string; // Year or semester (e.g., "Fall 2025")
   team: string; // Team members (comma-separated)
-  mentors?: string; // Mentors (comma-separated)
   description?: string; // Project description
   link?: string; // Optional project link
   github?: string; // Optional GitHub link

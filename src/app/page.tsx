@@ -49,7 +49,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-start w-[300px] gap-2">
             <Image
-              src="/images/members/placeholder_image.png"
+              src="/images/homepage_projects.jpg"
               alt="image"
               width={300}
               height={300}
@@ -97,7 +97,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-start w-[300px] gap-2">
             <Image
-              src="/images/members/placeholder_image.png"
+              src="/images/homepage_mentor_mentee.jpg"
               alt="image"
               width={300}
               height={300}

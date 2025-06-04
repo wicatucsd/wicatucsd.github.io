@@ -82,7 +82,7 @@ export default function Footer() {
               <h3 className='text-primary-light'>Contact Us</h3>
               <div tabIndex={-1} id="typeform-embed-anchor" >
                 <iframe
-                  src="https://form.typeform.com/to/GKKZfJYR?hide_footer=true?disable-auto-focus=true"
+                  src="https://wic2.typeform.com/to/wtrYJSVp?hide_footer=true?disable-auto-focus=true"
                   width="100%"
                   height="350"
                 ></iframe>
@@ -93,7 +93,7 @@ export default function Footer() {
             <p className='text-center'>
               In accordance with applicable Federal and State law and University policy, Undergraduate Women in Computing at UC San Diego does not discriminate, or grant preferences, on the basis of race, color, national origin, religion, sex, disability, and/or other protected categories. All enrolled students are encouraged to participate in Undergraduate Women in Computing at UC San Diego events and activities.
             </p>
-            <p>&copy; Women in Computing at University of California San Diego, {new Date().getFullYear()}</p>
+            <p className='text-center'>&copy; Women in Computing at University of California San Diego, {new Date().getFullYear()}</p>
           </div>
         </div>
        

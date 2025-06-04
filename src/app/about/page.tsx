@@ -19,17 +19,31 @@ export default function About() {
               Women in Computing (WIC) at UC San Diego is dedicated to fostering an inclusive and supportive environment for women in technology. Our mission is to cultivate the next generation of women in tech, promote a love for STEM, and improve the retention of women in computing-related fields.
               We welcome all individuals—regardless of identity, major, or experience level—who are passionate about technology and diversity in computing.
             </p>
+            <Image
+              src="/images/about_painting.JPG"
+              alt="What is WIC"
+              width={500}
+              height={500}
+              className="object-cover flex-none"
+            />
           </div>
           <div className="flex-1 flex flex-col items-start gap-sm">
             <h2>Why join?</h2>
             <p>We know that everyone has different reasons for joining WIC. Here’s how we can support you based on your goals:</p>
-              <ul className="list-disc pl-5">
-                <li><strong>Career Opportunities:</strong> Attend company networking events, gain resume exposure to top companies, and participate in the Mentor/Mentee program.</li>
-                <li><strong>Building Technical Skills:</strong> Join Tech Dev workshops, participate in BPCs, and contribute to Tech Dev Project Teams.</li>
-                <li><strong>Finding Community:</strong> Engage in socials, GBMs, and Community Hours to connect with like-minded individuals.</li>
-                <li><strong>Developing Leadership Skills:</strong> Take an active role in committees, lead DEI events, or apply for a board position.</li>
-                <li><strong>Giving Back:</strong> Join the EDGE program or volunteer for outreach initiatives to inspire future women in tech.</li>
-              </ul>
+            <ul className="list-disc pl-5">
+              <li><strong>Career Opportunities:</strong> Attend company networking events, gain resume exposure to top companies, and participate in the Mentor/Mentee program.</li>
+              <li><strong>Building Technical Skills:</strong> Join Tech Dev workshops, participate in BPCs, and contribute to Tech Dev Project Teams.</li>
+              <li><strong>Finding Community:</strong> Engage in socials, GBMs, and Community Hours to connect with like-minded individuals.</li>
+              <li><strong>Developing Leadership Skills:</strong> Take an active role in committees, lead DEI events, or apply for a board position.</li>
+              <li><strong>Giving Back:</strong> Join the EDGE program or volunteer for outreach initiatives to inspire future women in tech.</li>
+            </ul>
+            <Image
+              src="/images/about_event.JPG"
+              alt="Why Join"
+              width={500}
+              height={500}
+              className="object-cover flex-none"
+            />
           </div>
         </div>
       </section>
@@ -43,6 +57,13 @@ export default function About() {
               <li>Attend <strong>4 WIC events</strong>, including at least <strong>1 GBM</strong> and 3 additional events of your choice.</li>
               <li>Attend 1 GBM and actively participate in one of: <strong>Mentor-Mentee Program</strong> (as a mentor or mentee), <strong>EDGE Program</strong> (as a mentor), or <strong>DEI Committee.</strong></li>
             </ul>
+            <Image
+              src="/images/about_climbing.png"
+              alt="Active Membership"
+              width={500}
+              height={500}
+              className="object-cover flex-none"
+            />
           </div>
           <div className="flex-1 flex flex-col items-start gap-sm">
             <h2 className="text-primary-light">Active Member Perks</h2>
@@ -52,6 +73,13 @@ export default function About() {
               <li><strong>Exclusive WIC stickers & merch!</strong></li>
               <li><strong>Resume listing in the WIC database</strong>, accessible by top companies like Roblox, Intuit, and ServiceNow.</li>
             </ul>
+            <Image
+              src="/images/about_dog.jpg"
+              alt="Benefits of active membership"
+              width={500}
+              height={500}
+              className="object-cover flex-none"
+            />
           </div>
         </div>
       </section>
@@ -67,6 +95,13 @@ export default function About() {
             <p>
             Board applications open at the end of winter quarter and voting takes place at the beginning of spring quarter. You must be have been an active member for either fall or winter quarter of the current school year to apply.
             </p>
+            <Image
+              src="/images/about_picnic.png"
+              alt="Board"
+              width={500}
+              height={500}
+              className="object-cover flex-none"
+            />
           </div>
           <div className="flex-1 flex flex-col items-start gap-sm">
             <h2>Join a WIC Committee</h2>
@@ -78,8 +113,14 @@ export default function About() {
               <li>DEI Committee</li>
               <li>BPC Committee</li>
               <li>EDGE Committee</li>
-              <li>Social Committee</li>
             </ul>
+            <Image
+              src="/images/about_boba.jpg"
+              alt="Event"
+              width={500}
+              height={500}
+              className="object-cover flex-none"
+            />
           </div>
         </div>
       </section>

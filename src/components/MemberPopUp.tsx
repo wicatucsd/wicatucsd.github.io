@@ -50,10 +50,10 @@ export default function MemberPopUp({ member }: MemberPopUpProps) {
           </div>
         </div>
         {/* Make max width the same as imageSize. Hardcoded because it doesn't seem to work dynamically */}
-        <p lang="en" className={`font-bold max-w-[175px] break-words hyphens-auto whitespace-normal`}>
+        <p lang="en" className="font-bold max-w-[175px] break-words hyphens-auto whitespace-normal">
           {member.name}
         </p>
-        <p lang="en" className={`max-w-[175px] break-words hyphens-auto whitespace-normal`}>
+        <p lang="en" className="max-w-[175px] break-words hyphens-auto whitespace-normal">
           {member.position}
         </p>
       </div>

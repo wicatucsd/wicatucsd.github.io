@@ -79,3 +79,23 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer utilities {
+  .blink-cursor {
+    animation: blink 1s steps(1, start) infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+}
+
+.font-inconsolata {
+  font-family: 'Inconsolata', monospace;
+  font-weight: bold;
+}

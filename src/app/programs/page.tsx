@@ -4,6 +4,7 @@ import { Project, Sponsor } from "@/types/index";
 import ProjectsGallery from "@/components/ProjectsGallery";
 import useCsvData from "@/utils/useCsvData";
 import Image from "next/image";
+import Typewriter from "@/components/Typewriter";
 import Button from "@/components/Button";
 
 export default function Programs() {
@@ -14,7 +15,7 @@ export default function Programs() {
     <main>
       <section className="pb-lg">
         <div className="flex flex-col sm:flex-row justify-between items-center bg-gray-light text-gray-dark gap-md">
-          <h1>Teach a girl to code and she&apos;ll change the world.</h1>
+          <Typewriter text="Teach a girl to code and she&apos;ll change the world. " className="text-left"/>
           <Image
               src="/images/programs_uke.png"
               alt="Picture"

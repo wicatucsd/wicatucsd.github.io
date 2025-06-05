@@ -1,10 +1,11 @@
 import Image from "next/image";
+import Typewriter from "@/components/Typewriter";
 
 export default function About() {
   return (
     <main>
       <section className="flex flex-col items-center gap-lg">
-        <h1 className="text-start">{`{Ladies} by day, {hackers} by night`}</h1>
+        <Typewriter text={`{Ladies} by day, {hackers} by night`} className="text-left"/>
         <Image
           src="/images/big_group_picture.jpg"
           alt="people"
@@ -74,7 +75,7 @@ export default function About() {
               <li><strong>Resume listing in the WIC database</strong>, accessible by top companies like Roblox, Intuit, and ServiceNow.</li>
             </ul>
             <Image
-              src="/images/about_dog.jpg"
+              src="/images/about_dog.JPG"
               alt="Benefits of active membership"
               width={500}
               height={500}

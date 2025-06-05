@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Button from "@/components/Button";
 import useCsvData from "@/utils/useCsvData";
+import Typewriter from "@/components/Typewriter";
 import { Sponsor } from "@/types";
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
     <main>
       <section className="flex flex-col sm:flex-row justify-between items-center bg-gray-light text-gray-dark gap-md">
         <div className="flex flex-col items-start gap-sm">
-          <h1 className="text-start">Women who code write the future.</h1>
+          <Typewriter text="Women who code write the future. " className="text-left"/>
           <p>We&apos;re <b>Women in Computing at UC San Diego</b> - coders and engineers, of all genders, who support the female presence in computing.</p>
           <Button
             text="Join Us"

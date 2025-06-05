@@ -98,7 +98,7 @@ export default function MemberPopUp({ member }: MemberPopUpProps) {
                 <div className="flex flex-col gap-sm">
                   <p><b className="text-primary-medium">Favorite language:</b> {member.language}</p>
                   <p><b className="text-primary-medium">Favorite spot:</b> {member.spot}</p>
-                  <p><b className="text-primary-medium">Best part of WIC:</b> {member.wiclove}</p>
+                  <p><b className="text-primary-medium">Favorite memory/part of WIC:</b> {member.wiclove}</p>
                   <p><b className="text-primary-medium">Fun fact:</b> {member.bio}</p>
                   <div className="flex gap-md items-center">
                     {member.email && (
@@ -139,17 +139,6 @@ export default function MemberPopUp({ member }: MemberPopUpProps) {
                         <Image
                           src="/images/icons/github.png"
                           alt="GitHub"
-                          width={iconSize}
-                          height={iconSize}
-                          className="transition-transform duration-200 hover:scale-120"
-                        />
-                      </a>
-                    )}
-                    {member.website && (
-                      <a href={member.website} target="_blank" rel="noopener noreferrer">
-                        <Image
-                          src="/images/icons/website.png"
-                          alt="Website"
                           width={iconSize}
                           height={iconSize}
                           className="transition-transform duration-200 hover:scale-120"

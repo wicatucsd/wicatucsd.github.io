@@ -10,7 +10,6 @@ export type Member = {
   linkedin: string;
   instagram: string;
   github: string;
-  website: string;
   image: string;
 };
 

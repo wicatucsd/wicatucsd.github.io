@@ -43,11 +43,11 @@ export default function Navbar() {
         </button>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-md">
+        <ul className="hidden md:flex space-x-md pr-sm">
           <li>
             <Link
               href="/about"
-              className="font-bold text-primary-medium hover:text-gray-dark"
+              className="font-bold text-primary-medium hover:text-gray-dark text-lg"
             >
               About
             </Link>
@@ -55,7 +55,7 @@ export default function Navbar() {
           <li>
             <Link
               href="/team"
-              className="font-bold text-primary-medium hover:text-gray-dark"
+              className="font-bold text-primary-medium hover:text-gray-dark text-lg"
             >
               Team
             </Link>
@@ -63,7 +63,7 @@ export default function Navbar() {
           <li>
             <Link
               href="/events"
-              className="font-bold text-primary-medium hover:text-gray-dark"
+              className="font-bold text-primary-medium hover:text-gray-dark text-lg"
             >
               Events
             </Link>
@@ -71,7 +71,7 @@ export default function Navbar() {
           <li>
             <Link
               href="/programs"
-              className="font-bold text-primary-medium hover:text-gray-dark"
+              className="font-bold text-primary-medium hover:text-gray-dark text-lg"
             >
               Get Involved
             </Link>
@@ -79,7 +79,7 @@ export default function Navbar() {
           <li>
             <Link
               href="/resources"
-              className="font-bold text-primary-medium hover:text-gray-dark"
+              className="font-bold text-primary-medium hover:text-gray-dark text-lg"
             >
               Resources
             </Link>

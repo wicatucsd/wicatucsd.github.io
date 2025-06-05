@@ -5,7 +5,7 @@ export default function About() {
   return (
     <main>
       <section className="flex flex-col items-center gap-lg">
-        <Typewriter text={`{Ladies} by day, {hackers} by night`} className="text-left"/>
+        <Typewriter text={`{Ladies} by day, {hackers} by night `} className="text-left"/>
         <Image
           src="/images/big_group_picture.jpg"
           alt="people"

@@ -10,21 +10,21 @@ export default function Home() {
 
   return (
     <main>
-      <section className="flex flex-col sm:flex-row justify-between items-center bg-gray-light text-gray-dark gap-md">
-        <div className="flex flex-col items-start gap-sm">
-          <Typewriter text="Women who code write the future. " className="text-left"/>
+      <section className="flex flex-col sm:flex-row justify-between items-center bg-gradient-to-b from-gray-light to-primary-light text-gray-dark gap-md pb-[10rem]">
+        <div className="flex flex-col items-start gap-sm w-full sm:w-1/2">
+          <Typewriter text="Women who code write the future. " className="text-left text-[4rem]"/>
           <p>We&apos;re <b>Women in Computing at UC San Diego</b> - coders and engineers, of all genders, who support the female presence in computing.</p>
           <Button
             text="Join Us"
             href="https://linktr.ee/wicucsd"
           />
         </div>
-        <div>
+        <div className="w-full sm:w-1/2">
           <Image
             src="/images/plant_computer.png"
             alt="WIC computer with plants around it"
-            width={600}
-            height={600}
+            width={1000}
+            height={1000}
           />
         </div>
       </section>

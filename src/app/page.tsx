@@ -13,7 +13,6 @@ export default function Home() {
         <div className="flex flex-col items-start gap-sm">
           <h1 className="text-start">Women who code write the future.</h1>
           <p>We&apos;re <b>Women in Computing at UC San Diego</b> - coders and engineers, of all genders, who support the female presence in computing.</p>
-          <p>NOTE: THIS  WEBSITE IS A WORK-IN-PROGRESS (and probably not mobile friendly).</p>
           <Button
             text="Join Us"
             href="https://linktr.ee/wicucsd"

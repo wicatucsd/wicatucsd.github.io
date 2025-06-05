@@ -13,7 +13,16 @@ export default function Programs() {
   return (
     <main>
       <section className="pb-lg">
-        <h1>Teach a girl to code and she&apos;ll change the world.</h1>
+        <div className="flex flex-col sm:flex-row justify-between items-center bg-gray-light text-gray-dark gap-md">
+          <h1>Teach a girl to code and she&apos;ll change the world.</h1>
+          <Image
+              src="/images/programs_uke.png"
+              alt="Picture"
+              width={300}
+              height={300}
+              className="sm:w-1/3 object-cover flex-none"
+            />
+        </div>
       </section>
       <section id="bpc" className="bg-primary-medium text-gray-light flex flex-col gap-md">
         <h1 className="text-primary-light">Beginner&apos;s Programming Competition</h1>

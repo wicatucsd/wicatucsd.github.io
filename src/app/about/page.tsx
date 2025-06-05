@@ -6,7 +6,7 @@ export default function About() {
       <section className="flex flex-col items-center gap-lg">
         <h1 className="text-start">{`{Ladies} by day, {hackers} by night`}</h1>
         <Image
-          src="/images/big_group_picture.png"
+          src="/images/big_group_picture.jpg"
           alt="people"
           width={1000}
           height={1000}

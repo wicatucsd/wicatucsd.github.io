@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+:root {
+  font-size: 16px;
+
+  --background: var(--color-gray-light);
+  --foreground: var(--color-gray-dark);
+
+  /* Use primary/secondary variables instead of the actual color variables */
+  --color-primary-light: var(--color-purple-light);
+  --color-primary-medium: var(--color-purple-medium);
+  --color-primary-dark: var(--color-purple-dark);
+  --color-secondary-light: var(--color-peach-light);
+  --color-secondary-medium: var(--color-peach-medium);
+
+  --color-purple-light: #E7D1F4;
+  --color-purple-medium: #4D4C7D;
+  --color-purple-dark: #363062;
+  --color-peach-light: #FFB4B5;
+  --color-peach-medium: #E47B75;
+  --color-gray-light: #F4EDFA;
+  --color-gray-dark: #140C55;
+  
+  /* FullCalendar CSS Variables */
+  --fc-border-color: var(--color-primary-medium);
+  --fc-daygrid-event-dot-width: 5px;
+  --fc-button-bg-color: var(--color-secondary-light);
+  --fc-button-border-color: var(--color-secondary-light);
+  --fc-button-hover-bg-color: var(--color-secondary-medium);
+  --fc-button-hover-border-color: var(--color-secondary-medium);
+  --fc-button-active-bg-color: var(--color-secondary-medium);
+  --fc-button-active-border-color: var(--color-secondary-medium);
+}
+
+/* Tailwind Variables*/
+@theme {
+  --color-primary-light: var(--color-purple-light);
+  --color-primary-medium: var(--color-purple-medium);
+  --color-primary-dark: var(--color-purple-dark);
+  --color-secondary-light: var(--color-peach-light);
+  --color-secondary-medium: var(--color-peach-medium);
+  --color-gray-light: #F4EDFA;
+  --color-gray-dark: #140C55;
+
+  --spacing-xl: 8rem; /* 128px */
+  --spacing-lg: 4rem; /* 64px */
+  --spacing-md: 2rem; /* 32px */
+  --spacing-sm: 1rem; /* 16px */
+
+  --text-h1: 3rem;
+  --text-h2: 2rem;
+  --text-h3: 1.5rem;
+}
+
+@layer base {
+  section {
+    @apply pt-lg     /* 4rem padding on top */
+           pb-xl     /* 8rem padding on bottom */
+           px-md     /* base: 1rem */
+           md:px-lg  /* ≥md: 4rem */
+           lg:px-xl; /* ≥lg: 8rem */
+  }
+
+  h1 {
+    @apply text-h1 font-bold leading-tight text-center;
+    color: var(--color-primary-medium);
+  }
+  h2 {
+    @apply text-h2 font-bold;
+    color: var(--color-primary-medium);
+  }
+  h3 {
+    @apply text-h3 font-bold;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}

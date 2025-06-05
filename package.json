@@ -1,63 +1,38 @@
 {
-  "name": "wic-website-2020",
+  "name": "wic-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
-  "dependencies": {
-    "@fullcalendar/core": "^5.3.1",
-    "@fullcalendar/daygrid": "^5.3.1",
-    "@fullcalendar/google-calendar": "^5.3.1",
-    "@fullcalendar/react": "^5.3.1",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "fontsource-kumbh-sans": "^3.0.1",
-    "node-sass": "^4.14.1",
-    "react": "^16.13.1",
-    "react-alice-carousel": "^1.19.3",
-    "react-animated-burgers": "^1.2.8",
-    "react-countup": "^4.3.3",
-    "react-dom": "^16.13.1",
-    "react-ga": "^3.1.2",
-    "react-grid-system": "^7.0.3",
-    "react-icons": "^3.11.0",
-    "react-lazy-load-image-component": "^1.5.0",
-    "react-number-counter": "^1.0.8",
-    "react-scripts": "3.4.3",
-    "react-scroll": "^1.8.1",
-    "react-sliding-pane": "^6.1.0",
-    "react-sliding-side-panel": "^1.1.8",
-    "react-tabs": "^3.1.1",
-    "react-visibility-sensor": "^5.1.1",
-    "react-window-size": "^1.2.2",
-    "sass-resources-loader": "^2.1.0",
-    "styled-components": "^5.2.0"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@fullcalendar/core": "^6.1.17",
+    "@fullcalendar/daygrid": "^6.1.17",
+    "@fullcalendar/google-calendar": "^6.1.17",
+    "@fullcalendar/list": "^6.1.17",
+    "@fullcalendar/react": "^6.1.17",
+    "@fullcalendar/timegrid": "^6.1.17",
+    "autoprefixer": "^10.4.21",
+    "next": "15.3.1",
+    "papaparse": "^5.5.2",
+    "postcss": "^8.5.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-tabs": "^6.1.0"
   },
   "devDependencies": {
-    "ftp-deploy": "^2.3.7",
-    "gh-pages": "^6.2.0"
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/papaparse": "^5.3.15",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.1",
+    "tailwindcss": "^4.1.4",
+    "typescript": "^5"
   }
 }

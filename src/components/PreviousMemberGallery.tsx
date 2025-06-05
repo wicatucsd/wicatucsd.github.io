@@ -25,7 +25,7 @@ export default function PreviousMemberGallery({ previousMembers }: PreviousMembe
             alt={member.name}
             width={175}
             height={175}
-            className="aspect-square object-cover"
+            className="aspect-square object-cover mb-3"
           />
            <p className='font-bold max-w-[175px] break-words hyphens-auto whitespace-normal'>{member.name}</p>
            <p className='max-w-[175px] break-words hyphens-auto whitespace-normal'>{member.position}</p>

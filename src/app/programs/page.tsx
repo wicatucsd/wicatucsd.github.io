@@ -186,7 +186,7 @@ export default function Programs() {
           Each quarter, projects will be centered around a theme. For example, in Winter 2025, the theme was creating a website centered around activism. 
           Keep an eye out for when applications open each quarter. In the meantime, check out some of the past projects below! 
         </p>
-        <h2>Selected Past Projects</h2>
+        <h2>Past Projects</h2>
         <ProjectsGallery projects={projects}/>
       </section>
     </main>

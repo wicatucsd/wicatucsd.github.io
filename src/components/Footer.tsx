@@ -45,7 +45,7 @@ export default function Footer() {
                       <p className='font-bold hidden md:block'>LinkedIn</p>
                     </div>
                   </a>
-                  <a href="https://linktr.ee/wicucsd" target="_blank" rel="noopener noreferrer">
+                  <a href="https://linktr.ee/wicatucsd" target="_blank" rel="noopener noreferrer">
                     <div className="inline-flex items-center gap-sm transition-transform duration-200 hover:scale-120">
                       <Image
                       src="/images/icons/linktree-light.png"

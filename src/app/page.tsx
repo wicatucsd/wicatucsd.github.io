@@ -16,7 +16,7 @@ export default function Home() {
           <p>We&apos;re <b>Women in Computing at UC San Diego</b> - coders and engineers, of all genders, who support the female presence in computing.</p>
           <Button
             text="Join Us"
-            href="https://linktr.ee/wicucsd"
+            href="https://linktr.ee/wicatucsd"
           />
         </div>
         <div className="w-full sm:w-1/2">

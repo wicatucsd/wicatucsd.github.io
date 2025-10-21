@@ -131,12 +131,12 @@ export default function Home() {
           <div className="flex flex-wrap gap-md justify-center">
             <Button
               text="Learn More"
-              href="https://drive.google.com/file/d/1dHTXJWoNeEYoXo7ohLOukdOaf47sIUku/view"
+              href="https://drive.google.com/file/d/1lCeTe1NunL2mCmoCC9BrA96UTGsGmTJ0/view"
               color="dark"
             />
             <Button
               text="Sponsor Us"
-              href="https://forms.gle/g37ZtPymLZXbPyHC8"
+              href="http://tinyurl.com/Sponsor-WIC"
               color="dark"
             />
           </div>

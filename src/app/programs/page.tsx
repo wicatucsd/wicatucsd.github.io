@@ -66,17 +66,16 @@ export default function Programs() {
                     height={400}
                     className="object-cover flex-none"
                   />
-                  {/* TODO: Uncomment this and add the problems/solutions links when they are available */}
-                  {/* <div className="flex gap-sm">
+                  <div className="flex gap-sm">
                     <Button
                       text="Problems"
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSfn2vX0g3q4x5r7J6z8Qe5G9"
+                      href="https:/docs.google.com/document/d/1JDcXHNBQ5QLzkhUM8_KT_F3CsHAN9WKqtRuG2H4coJA/"
                     />
                     <Button
                       text="Solutions"
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSfn2vX0g3q4x5r7J6z8Qe5G9"
+                      href="https://www.dropbox.com/scl/fo/68qeisvgthzqkbym7dra7/AADsN2KKBpsZxXbrHhP6BUI?rlkey=3kxhlakxbph7pyon2tiacx20w&e=1&st=ikfmpjot&dl=0"
                     />
-                  </div> */}
+                  </div>
                 </div>
                 <div className="flex-1 flex flex-col items-start gap-sm">
                   <h3>Winter 2025</h3>

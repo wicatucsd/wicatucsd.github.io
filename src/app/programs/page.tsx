@@ -85,7 +85,7 @@ export default function Programs() {
                   <div className="flex gap-sm">
                     <Button
                       text="Problems"
-                      href="https:/docs.google.com/document/d/1JDcXHNBQ5QLzkhUM8_KT_F3CsHAN9WKqtRuG2H4coJA/"
+                      href="https://docs.google.com/document/d/1JDcXHNBQ5QLzkhUM8_KT_F3CsHAN9WKqtRuG2H4coJA/"
                     />
                     <Button
                       text="Solutions"

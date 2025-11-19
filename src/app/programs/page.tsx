@@ -74,6 +74,22 @@ export default function Programs() {
               <h2>Previous BPCs</h2>
               <div className="flex flex-wrap gap-md">
                 <div className="flex-1 flex flex-col items-start gap-sm">
+                  <h3>Fall 2025</h3>
+                  <Image
+                    src="/images/bpc_fa25.png"
+                    alt="BPC graphic"
+                    width={400}
+                    height={400}
+                    className="object-cover flex-none"
+                  />
+                  <div className="flex gap-sm">
+                    <Button
+                      text="Problems & Solutions"
+                      href="https://drive.google.com/drive/folders/1OphNddQmIRpWjL5_rPEUSgcSv1mH_ubL?usp=sharing"
+                    />
+                  </div>
+                </div>
+                <div className="flex-1 flex flex-col items-start gap-sm">
                   <h3>Spring 2025</h3>
                   <Image
                     src="/images/bpc_sp25.png"

@@ -52,27 +52,29 @@ export default function Programs() {
           <div className="bg-primary-light p-md">
             <TabPanel>
               <h2>Upcoming BPC</h2>
-              <h3>Fall 2025</h3>
-              <div className="flex flex-col sm:flex-row justify-center items-center gap-md">
-                <Image
-                  src="/images/bpc_fa25participant.png"
-                  alt="Participant graphic"
-                  width={500}
-                  height={500}
-                  className="object-cover flex-none"
-                />
-                <Image
-                  src="/images/bpc_fa25volunteer.png"
-                  alt="Volunteer graphic"
-                  width={500}
-                  height={500}
-                  className="object-cover flex-none"
-                />
-              </div>
+              <p className="mt-sm text-lg">
+                Stay tuned for more information on WI26 BPC!
+              </p>
             </TabPanel>
             <TabPanel>
               <h2>Previous BPCs</h2>
               <div className="flex flex-wrap gap-md">
+                <div className="flex-1 flex flex-col items-start gap-sm">
+                  <h3>Fall 2025</h3>
+                  <Image
+                    src="/images/bpc_fa25.png"
+                    alt="BPC graphic"
+                    width={400}
+                    height={400}
+                    className="object-cover flex-none"
+                  />
+                  <div className="flex gap-sm">
+                    <Button
+                      text="Problems & Solutions"
+                      href="https://drive.google.com/drive/folders/1OphNddQmIRpWjL5_rPEUSgcSv1mH_ubL?usp=sharing"
+                    />
+                  </div>
+                </div>
                 <div className="flex-1 flex flex-col items-start gap-sm">
                   <h3>Spring 2025</h3>
                   <Image

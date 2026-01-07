@@ -11,7 +11,7 @@ export default function Events() {
           <h2>Calendar</h2>
           <Button
             text="Add it to Your Calendar"
-            href="https://calendar.google.com/calendar/u/2/r?cid=NjYwZDBmNmE3OTg0MjZhOTRhMTc3NzUzZWMzNWI0ZGE3ZWE5ZTgyYzY5ZmQ0YjgxYTk1Y2E5MTgzZTA1NDA1YUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+            href="https://calendar.google.com/calendar/u/0?cid=YjI2YmVmODE3MzRhYjk3MzEwZGI4MjA3YmM5MTIxYmJkMTBlODNjZmY4ZTA1Y2RiMDA5ZmU4MmI2NGZiNWY2ZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
           />
           <div className="w-full p-md z-0">
             <Calendar/>

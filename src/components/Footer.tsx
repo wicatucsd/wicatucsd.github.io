@@ -56,7 +56,7 @@ export default function Footer() {
                       <p className='font-bold hidden md:block'>LinkTree</p>
                     </div>
                   </a>
-                  <a href="mailto:wic.ucsd@gmail.com" target="_blank" rel="noopener noreferrer">
+                  <a href="mailto:wic.at.ucsandiego@gmail.com" target="_blank" rel="noopener noreferrer">
                     <div className="inline-flex items-center gap-sm transition-transform duration-200 hover:scale-120">
                       <Image
                       src="/images/icons/email-light.png"

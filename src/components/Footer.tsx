@@ -82,7 +82,7 @@ export default function Footer() {
               <h3 className='text-primary-light'>Contact Us</h3>
               <div tabIndex={-1} id="typeform-embed-anchor" >
                 <iframe
-                  src="https://wic2.typeform.com/to/wtrYJSVp?hide_footer=true?disable-auto-focus=true"
+                  src="https://form.typeform.com/to/xaYLIYdm"
                   width="100%"
                   height="350"
                 ></iframe>

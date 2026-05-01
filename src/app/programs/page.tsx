@@ -57,29 +57,29 @@ export default function Programs() {
                 <Image
                   src="/images/bpc_sp26participant.png"
                   alt="Participant graphic"
-                  width={500}
-                  height={500}
+                  width={400}
+                  height={400}
                   className="object-cover flex-none"
                 />
                 <Image
                   src="/images/bpc_sp26volunteer.png"
                   alt="Volunteer graphic"
-                  width={500}
-                  height={500}
+                  width={400}
+                  height={400}
                   className="object-cover flex-none"
                 />
               </div>
             </TabPanel>
             <TabPanel>
               <h2>Previous BPCs</h2>
-              <div className="flex flex-wrap gap-md">
-                <div className="flex-1 flex flex-col items-start gap-sm">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-md">
+                <div className="flex flex-col gap-sm">
                   <h3>Winter 2026</h3>
                   <Image
                     src="/images/bpc_wi26.png"
                     alt="BPC graphic"
-                    width={400}
-                    height={400}
+                    width={300}
+                    height={300}
                     className="object-cover flex-none"
                   />
                   <div className="flex gap-sm">
@@ -93,13 +93,13 @@ export default function Programs() {
                     />
                   </div>
                 </div>
-                <div className="flex-1 flex flex-col items-start gap-sm">
+                <div className="flex flex-col gap-sm">
                   <h3>Fall 2025</h3>
                   <Image
                     src="/images/bpc_fa25.png"
                     alt="BPC graphic"
-                    width={400}
-                    height={400}
+                    width={300}
+                    height={300}
                     className="object-cover flex-none"
                   />
                   <div className="flex gap-sm">
@@ -109,13 +109,13 @@ export default function Programs() {
                     />
                   </div>
                 </div>
-                <div className="flex-1 flex flex-col items-start gap-sm">
+                <div className="flex flex-col gap-sm">
                   <h3>Spring 2025</h3>
                   <Image
                     src="/images/bpc_sp25.png"
                     alt="BPC graphic"
-                    width={400}
-                    height={400}
+                    width={300}
+                    height={300}
                     className="object-cover flex-none"
                   />
                   <div className="flex gap-sm">
@@ -129,13 +129,13 @@ export default function Programs() {
                     />
                   </div>
                 </div>
-                <div className="flex-1 flex flex-col items-start gap-sm">
+                <div className="flex flex-col gap-sm">
                   <h3>Winter 2025</h3>
                   <Image
                     src="/images/bpc_wi25.png"
                     alt="BPC graphic"
-                    width={400}
-                    height={400}
+                    width={300}
+                    height={300}
                     className="object-cover flex-none"
                   />
                   <div className="flex gap-sm">
@@ -149,13 +149,13 @@ export default function Programs() {
                     />
                   </div>
                 </div>
-                <div className="flex-1 flex flex-col items-start gap-sm">
+                <div className="flex flex-col gap-sm">
                   <h3>Fall 2024</h3>
                   <Image
                     src="/images/bpc_fa24.png"
                     alt="BPC graphic"
-                    width={400}
-                    height={400}
+                    width={300}
+                    height={300}
                     className="object-cover flex-none"
                   />
                   <div className="flex gap-sm">

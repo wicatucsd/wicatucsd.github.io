@@ -52,9 +52,23 @@ export default function Programs() {
           <div className="bg-primary-light p-md">
             <TabPanel>
               <h2>Upcoming BPC</h2>
-              <p className="mt-sm text-lg">
-                Stay tuned for more information on WI26 BPC!
-              </p>
+              <h3>Spring 2026</h3>
+              <div className="flex flex-col sm:flex-row justify-center items-center gap-md">
+                <Image
+                  src="/images/bpc_sp26participant.png"
+                  alt="Participant graphic"
+                  width={500}
+                  height={500}
+                  className="object-cover flex-none"
+                />
+                <Image
+                  src="/images/bpc_sp26volunteer.png"
+                  alt="Volunteer graphic"
+                  width={500}
+                  height={500}
+                  className="object-cover flex-none"
+                />
+              </div>
             </TabPanel>
             <TabPanel>
               <h2>Previous BPCs</h2>

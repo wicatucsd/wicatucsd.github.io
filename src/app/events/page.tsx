@@ -14,7 +14,9 @@ export default function Events() {
             href="https://calendar.google.com/calendar/u/0?cid=YjI2YmVmODE3MzRhYjk3MzEwZGI4MjA3YmM5MTIxYmJkMTBlODNjZmY4ZTA1Y2RiMDA5ZmU4MmI2NGZiNWY2ZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
           />
           <div className="w-full p-md z-0">
-            <Calendar/>
+            <div className="min-w-[320px]">
+              <Calendar/>
+            </div>
           </div>
         </div>
         <div className="flex flex-col items-center gap-md w-full">

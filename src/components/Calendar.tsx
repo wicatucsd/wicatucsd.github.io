@@ -10,7 +10,7 @@ export default function Calendar() {
   const PUBLIC_GOOGLE_CALENDAR_ID = "660d0f6a798426a94a177753ec35b4da7ea9e82c69fd4b81a95ca9183e05405a@group.calendar.google.com";
 
   return (
-    <div className="text-sm sm:text-base">
+    <div className="text-sm sm:text-base w-full">
       <FullCalendar
         plugins={[dayGridPlugin, listPlugin, googleCalendarPlugin]}
         googleCalendarApiKey={PUBLIC_GOOGLE_CALENDAR_API_KEY}

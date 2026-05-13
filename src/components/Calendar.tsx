@@ -1,6 +1,7 @@
 "use client";
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
+import listPlugin from "@fullcalendar/list";
 import googleCalendarPlugin from "@fullcalendar/google-calendar";
 
 // Configure FullCalendar CSS variables in the globals.css
@@ -9,9 +10,9 @@ export default function Calendar() {
   const PUBLIC_GOOGLE_CALENDAR_ID = "660d0f6a798426a94a177753ec35b4da7ea9e82c69fd4b81a95ca9183e05405a@group.calendar.google.com";
 
   return (
-    <div className="text-sm sm:text-base">
+    <div className="text-sm sm:text-base w-full">
       <FullCalendar
-        plugins={[dayGridPlugin, googleCalendarPlugin]}
+        plugins={[dayGridPlugin, listPlugin, googleCalendarPlugin]}
         googleCalendarApiKey={PUBLIC_GOOGLE_CALENDAR_API_KEY}
         events={{
           googleCalendarId: PUBLIC_GOOGLE_CALENDAR_ID,
@@ -19,9 +20,18 @@ export default function Calendar() {
         eventColor="var(--color-primary-medium)"
         fixedWeekCount={false}
         height="auto"
-        aspectRatio={1.2} // Adjust aspect ratio for better fit on small screens
         eventBackgroundColor="var(--color-primary-medium)"
         eventBorderColor="var(--color-primary-medium)"
+        initialView={
+          typeof window !== "undefined" && window.innerWidth < 640
+            ? "listMonth"
+            : "dayGridMonth"
+        }
+        headerToolbar={{
+          left: "prev,next today",
+          center: "title",
+          right: "dayGridMonth,listMonth",
+        }}
       />
     </div>
   );

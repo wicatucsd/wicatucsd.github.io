@@ -3,11 +3,15 @@ import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import listPlugin from "@fullcalendar/list";
 import googleCalendarPlugin from "@fullcalendar/google-calendar";
+import { useState } from "react";
 
 // Configure FullCalendar CSS variables in the globals.css
 export default function Calendar() {
   const PUBLIC_GOOGLE_CALENDAR_API_KEY = "AIzaSyDDp3PGxcPokT5ZUli1P_VPgE49JP396YM"
   const PUBLIC_GOOGLE_CALENDAR_ID = "660d0f6a798426a94a177753ec35b4da7ea9e82c69fd4b81a95ca9183e05405a@group.calendar.google.com";
+
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 640;
+  const [currentView, setCurrentView] = useState(isMobile ? "listMonth" : "dayGridMonth");
 
   return (
     <div className="text-sm sm:text-base w-full">
@@ -22,16 +26,13 @@ export default function Calendar() {
         height="auto"
         eventBackgroundColor="var(--color-primary-medium)"
         eventBorderColor="var(--color-primary-medium)"
-        initialView={
-          typeof window !== "undefined" && window.innerWidth < 640
-            ? "listMonth"
-            : "dayGridMonth"
-        }
+        initialView={currentView}
         headerToolbar={{
-          left: "prev,next today",
+          left: currentView === "listMonth" ? "today" : "prev,next today",
           center: "title",
           right: "dayGridMonth,listMonth",
         }}
+        datesSet={(info) => setCurrentView(info.view.type)}
       />
     </div>
   );

@@ -78,6 +78,13 @@
   background-color: white !important;
 }
 
+.is-list-view .fc-prev-button,
+.is-list-view .fc-next-button,
+.is-list-view .fc-today-button {
+  opacity: 0.4 !important;
+  pointer-events: none !important;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

@@ -14,18 +14,20 @@ export default function Calendar() {
   const [currentView, setCurrentView] = useState(isMobile ? "listMonth" : "dayGridMonth");
 
   return (
-    <div className="text-sm sm:text-base w-full">
+    <div className={`text-sm sm:text-base w-full ${currentView === "listMonth" ? "is-list-view" : ""}`}>
       <FullCalendar
         plugins={[dayGridPlugin, listPlugin, googleCalendarPlugin]}
         googleCalendarApiKey={PUBLIC_GOOGLE_CALENDAR_API_KEY}
         events={{
           googleCalendarId: PUBLIC_GOOGLE_CALENDAR_ID,
         }}
+
         eventColor="var(--color-primary-medium)"
         fixedWeekCount={false}
         height="auto"
         eventBackgroundColor="var(--color-primary-medium)"
         eventBorderColor="var(--color-primary-medium)"
+
         initialView={currentView}
         headerToolbar={{
           left: currentView === "listMonth" ? "today" : "prev,next today",

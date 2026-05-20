@@ -27,7 +27,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Anything that is pushed to the `main` branch will be deployed onto `ucsdwic.github.io`. Before pushing to `main`, make sure the project builds properly by running the following command and making sure there are no errors.
+Anything that is pushed to the `main` branch will be deployed onto `wicatucsd.github.io`. Before pushing to `main`, make sure the project builds properly by running the following command and making sure there are no errors.
 ```bash
 npm run build
 ```

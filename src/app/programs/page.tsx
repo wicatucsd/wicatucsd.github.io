@@ -52,27 +52,47 @@ export default function Programs() {
           <div className="bg-primary-light p-md">
             <TabPanel>
               <h2>Upcoming BPC</h2>
-              <h3>Spring 2026</h3>
+              <h3>Look out for more updates in Fall 2026!</h3>
               <div className="flex flex-col sm:flex-row justify-center items-center gap-md">
                 <Image
-                  src="/images/bpc_sp26participant.png"
+                  src=""
                   alt="Participant graphic"
                   width={400}
                   height={400}
-                  className="object-cover flex-none"
+                  className="object-cover flex-none hidden"
                 />
                 <Image
-                  src="/images/bpc_sp26volunteer.png"
+                  src=""
                   alt="Volunteer graphic"
                   width={400}
                   height={400}
-                  className="object-cover flex-none"
+                  className="object-cover flex-none hidden"
                 />
               </div>
             </TabPanel>
             <TabPanel>
               <h2>Previous BPCs</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-md">
+                <div className="flex flex-col gap-sm">
+                  <h3>Spring 2026</h3>
+                  <Image
+                    src="/images/bpc_sp26.png"
+                    alt="BPC graphic"
+                    width={300}
+                    height={300}
+                    className="object-cover flex-none"
+                  />
+                  <div className="flex gap-sm">
+                    <Button
+                      text="Problems"
+                      href="https://docs.google.com/document/d/1tr3BXDWgm3oDZGSE1Jxw03ACVoAicoXG2ND5EjF1jBo/edit?usp=sharing"
+                    />
+                    <Button
+                      text="Solutions"
+                      href="https://drive.google.com/drive/folders/1oxEqdVjDU68Tb4VE_bf4MqyGp9xQuc3F?usp=sharing"
+                    />
+                  </div>
+                </div>
                 <div className="flex flex-col gap-sm">
                   <h3>Winter 2026</h3>
                   <Image
@@ -104,8 +124,12 @@ export default function Programs() {
                   />
                   <div className="flex gap-sm">
                     <Button
-                      text="Problems & Solutions"
-                      href="https://drive.google.com/drive/folders/1OphNddQmIRpWjL5_rPEUSgcSv1mH_ubL?usp=sharing"
+                      text="Problems"
+                      href="https://docs.google.com/document/d/1nEB5l0ujyuWNWIuxYsMXT0RK7jCsESADw4ZCtOpPEl8/edit?usp=sharing"
+                    />
+                    <Button
+                      text="Solutions"
+                      href="https://drive.google.com/drive/folders/1OphNddQmIRpWjL5_rPEUSgcSv1mH_ubL?usp=drive_link"
                     />
                   </div>
                 </div>

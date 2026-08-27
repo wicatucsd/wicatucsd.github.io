@@ -259,7 +259,7 @@ export default function Programs() {
           WIC Project Teams is designed to give students an opportunity to gain project experience. Join or get placed into a team and build a project (website application) over the quarter that you can showcase to potential employers.
           Prior website/mobile development experience is not necessary. We are looking less at technical experience and more at motivation and initiative!
           Each quarter, projects will be centered around a theme. For example, in Winter 2025, the theme was creating a website centered around activism. 
-          Keep an eye out for when applications open each quarter. In the meantime, check out some of the past projects below! 
+          Keep an eye out for when applications open each quarter. In the meantime, check out some of the past winning below! 
         </p>
         <h2>Past Projects</h2>
         <ProjectsGallery projects={projects}/>

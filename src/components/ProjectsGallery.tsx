@@ -18,9 +18,9 @@ function groupByYear(projects: Project[]): Record<string, Project[]> {
 }
 
 const QUARTER_ORDER: Record<string, number> = {
-  fall: 0,
-  winter: 1,
-  spring: 2,
+  winter: 0,
+  spring: 1,
+  fall: 2,
 };
 
 function quarterSortValue(label: string): number {

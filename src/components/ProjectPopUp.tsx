@@ -17,6 +17,7 @@ export default function ProjectPopUp({ year, projects }: ProjectPopUpProps) {
   };
 
   const thumbnailImage = projects[0]?.image || "/images/wic_logo.png";
+  const NO_WINNER_LABEL = ["Winter 2025", "Spring 2025"];
   
   return (
     <div>
@@ -39,8 +40,8 @@ export default function ProjectPopUp({ year, projects }: ProjectPopUpProps) {
             onClick={togglePopUp}
           >
             <div>
-              <p>{year}</p>
-              <h3 className="font-bold">{projects.length} {projects.length === 1 ? "Project" : "Projects"}</h3>
+              <p>{NO_WINNER_LABEL.includes(year) ? year : `${year} Winner`}</p>
+              <h3 className="font-bold">{projects[0].name}</h3>
             </div>
 
             <div className="h-[150px] w-[250px] overflow-hidden mx-auto flex items-center justify-center">

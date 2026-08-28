@@ -8,11 +8,11 @@ type ProjectsGalleryProps = {
 
 function groupByYear(projects: Project[]): Record<string, Project[]> {
   return projects.reduce((groups, project) => {
-    const year = String(project.year);
-    if (!groups[year]) {
-      groups[year] = [];
+    const key = String(project.year).trim();
+    if (!groups[key]) {
+      groups[key] = [];
     }
-    groups[year].push(project);
+    groups[key].push(project);
     return groups;
   }, {} as Record<string, Project[]>);
 }

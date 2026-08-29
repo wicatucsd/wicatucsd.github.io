@@ -73,7 +73,7 @@ export default function Footer() {
                 <p>Get weekly updates straight to your mailbox!</p>
                 <Button
                   text="Subscribe"
-                  href='https://docs.google.com/forms/d/e/1FAIpQLSdkzryVrC9XyZ4-MVtO-jyPIvhXehi3oGa1Q8i2Qjo7gYERdw/viewform'
+                  href='https://forms.gle/uyoj2w2BH8o7K6MZ7'
                   color='light'
                 />
               </div>

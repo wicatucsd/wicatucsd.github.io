@@ -17,7 +17,11 @@ export default function Team() {
     return acc;
   }, {} as Record<string, PreviousMember[]>);
 
-  const [selectedGroup, setSelectedGroup] = useState<"current" | "previous">("current");
+  const sortedYears = Object.keys(previousMembersByYear).sort(
+    (a, b) => Number(b) - Number(a)
+  );
+
+  const [selectedGroup, setSelectedGroup] = useState<string>("current");
 
   return (
     <section className="flex flex-col items-center gap-md">
@@ -26,16 +30,20 @@ export default function Team() {
       {/* Dropdown Menu */}
       <div className="mb-md flex flex-col sm:flex-row items-center sm:gap-sm">
         <label htmlFor="member-group" className="font-bold text-primary-medium text-center">
-          See Current or Previous Board Members:
+          Select Year:
         </label>
         <select
           id="member-group"
           className="mt-sm sm:mt-0 sm:ml-sm p-sm border-b border-gray-dark focus:outline-none"
           value={selectedGroup}
-          onChange={(e) => setSelectedGroup(e.target.value as "current" | "previous")}
+          onChange={(e) => setSelectedGroup(e.target.value)}
         >
-          <option value="current">Current Board Members</option>
-          <option value="previous">Previous Board Members</option>
+          <option value="current">2026-2027 (Current)</option>
+          {sortedYears.map((year) => (
+            <option key={year} value={year}>
+              {year}
+            </option>
+          ))}
         </select>
       </div>
 
@@ -45,14 +53,12 @@ export default function Team() {
             <MemberGallery members={boardMembers} />
           </div>
         )}
-        {selectedGroup === "previous" && (
+        {selectedGroup !== "current" && (
           <div className="flex flex-col items-center gap-md">
-            {Object.entries(previousMembersByYear).map(([year, members]) => (
-              <div key={year} className="flex flex-col items-center gap-md">
-                <h3 className="text-primary-medium font-bold">{year}</h3>
-                <PreviousMemberGallery previousMembers={members} />
-              </div>
-            ))}
+            <h3 className="text-primary-medium font-bold">{selectedGroup}</h3>
+            <PreviousMemberGallery 
+              previousMembers={previousMembersByYear[selectedGroup] || []}
+            />
           </div>
         )}
       </div>

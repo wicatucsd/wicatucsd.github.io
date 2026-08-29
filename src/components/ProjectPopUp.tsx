@@ -40,8 +40,8 @@ export default function ProjectPopUp({ year, projects }: ProjectPopUpProps) {
             onClick={togglePopUp}
           >
             <div>
-              <p>{NO_WINNER_LABEL.includes(year) ? year : `${year} Winner`}</p>
-              <h3 className="font-bold">{projects[0].name}</h3>
+              <h3 className="font-bold">{year} Projects</h3>
+              <p>{NO_WINNER_LABEL.includes(year) ? `` : `Winner: ${projects[0].name}`}</p>
             </div>
 
             <div className="h-[150px] w-[250px] overflow-hidden mx-auto flex items-center justify-center">
@@ -53,6 +53,7 @@ export default function ProjectPopUp({ year, projects }: ProjectPopUpProps) {
                 className="object-cover flex-none"
               />
             </div>
+            <u>View all submissions</u>
           </div>
         </div>
 

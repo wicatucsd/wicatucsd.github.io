@@ -30,7 +30,7 @@ export default function Calendar() {
 
         initialView={currentView}
         headerToolbar={{
-          left: currentView === "listMonth" ? "today" : "prev,next today",
+          left: "prev,next today",
           center: "title",
           right: "dayGridMonth,listMonth",
         }}

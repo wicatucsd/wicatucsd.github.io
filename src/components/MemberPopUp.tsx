@@ -145,6 +145,17 @@ export default function MemberPopUp({ member }: MemberPopUpProps) {
                         />
                       </a>
                     )}
+                    {member.website && (
+                      <a href={member.website} target="_blank" rel="noopener noreferrer">
+                        <Image
+                          src="/images/icons/website.png"
+                          alt="Website"
+                          width={iconSize}
+                          height={iconSize}
+                          className="transition-transform duration-200 hover:scale-120"
+                        />
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

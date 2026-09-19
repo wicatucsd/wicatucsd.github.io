@@ -53,7 +53,7 @@ export default function MemberPopUp({ member }: MemberPopUpProps) {
         <p lang="en" className="font-bold max-w-[175px] hyphens-none whitespace-normal">
           {member.name}
         </p>
-        <p lang="en" className="max-w-[175px]nhyphens-none whitespace-normal">
+        <p lang="en" className="max-w-[175px] hyphens-none whitespace-normal">
           {member.position}
         </p>
       </div>

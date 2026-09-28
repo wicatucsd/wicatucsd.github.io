@@ -114,7 +114,7 @@ export default function Home() {
         </div>
       </section>
       <section className="flex flex-col items-center bg-gray-light gap-md">
-        <h1>Sponsors</h1>
+        <h1>Supported By</h1>
         <div className="flex flex-col items-center gap-lg">
           <div className="flex flex-wrap gap-lg justify-center">
             {sponsors.map((sponsor) => (
@@ -135,7 +135,7 @@ export default function Home() {
               color="dark"
             />
             <Button
-              text="Sponsor Us"
+              text="Support Us"
               href="http://tinyurl.com/Sponsor-WIC"
               color="dark"
             />

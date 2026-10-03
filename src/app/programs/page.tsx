@@ -27,7 +27,7 @@ export default function Programs() {
       </section>
       <section id="bpc" className="bg-primary-medium text-gray-light flex flex-col gap-md">
         <h1 className="text-primary-light">Beginner&apos;s Programming Competition</h1>
-        <p>For 4+ years, Women in Computing has been hosting quarterly programming competitions, Beginner&apos;s Programming Competition, for 200+ undergraduate students who have not taken upper-division Computer Science or Data Science courses. The students solve 10 questions similar to those used in programming interviews in 3 hours. The competition format is similar to ACM ICPC, where participants brainstorm and pair-program to have fun and win prizes.</p>
+        <p>For 4+ years, Women in Computing has been hosting quarterly programming competitions, Beginner&apos;s Programming Competition, for 200+ undergraduate students who have not taken upper-division Computer Science or Data Science courses. The students solve 10 Leetcode-style questions similar to those used in programming interviews in 3 hours. The competition format is similar to ACM ICPC, where participants brainstorm and pair-program to have fun and win prizes.</p>
         <Tabs className="text-gray-dark">
           <TabList className="flex justify-between w-full">
             <Tab
@@ -52,22 +52,44 @@ export default function Programs() {
           <div className="bg-primary-light p-md">
             <TabPanel>
               <h2>Upcoming BPC</h2>
-              <h3>Look out for more updates in Fall 2026!</h3>
-              <div className="flex flex-col sm:flex-row justify-center items-center gap-md">
+              <div className="flex flex-col gap-sm">
+                <h3>Fall 2026</h3>
                 <Image
-                  src=""
-                  alt="Participant graphic"
-                  width={400}
-                  height={400}
-                  className="object-cover flex-none hidden"
-                />
-                <Image
-                  src=""
+                  src="/images/FA26_BPC_Committee.png"
                   alt="Volunteer graphic"
-                  width={400}
-                  height={400}
-                  className="object-cover flex-none hidden"
+                  width={300}
+                  height={300}
+                  className="object-cover flex-none"
                 />
+                <div className="flex flex-col items-start gap-sm">
+                  <p>
+                    Already taking upper divisions?
+                    <br />
+                    Become a volunteer instead!
+                    <br />
+                    Apply by <b>October 11th @ 11:59 PM</b>!
+                  </p>
+                  <Button
+                    text="Apply here"
+                    href="https://forms.gle/eKam7fMVEKkcozzcA"
+                  />
+                </div>
+                <div className="flex flex-col sm:flex-row justify-center items-center gap-md">
+                  <Image
+                    src=""
+                    alt="Participant graphic"
+                    width={400}
+                    height={400}
+                    className="object-cover flex-none hidden"
+                  />
+                  <Image
+                    src=""
+                    alt="Volunteer graphic"
+                    width={400}
+                    height={400}
+                    className="object-cover flex-none hidden"
+                  />
+                </div>
               </div>
             </TabPanel>
             <TabPanel>
@@ -222,6 +244,13 @@ export default function Programs() {
               Empowerment and Development for Girls in Engineering (EDGE) is a mentorship program by WIC at UCSD and SWE at UCSD that aims to inspire and empower high school girls to consider STEM-related careers in order to bridge the gender gap in engineering fields.
               As an EDGE mentor, you will have the opportunity to get paired with a high school mentee and guide them through their journey in STEM. 
             </p>
+            <p>
+              Apply to be a mentor by <b>Monday, October 12th @ 11:59 PM</b>!
+            </p>
+            <Button
+              text="Become a Mentor"
+              href="https://forms.gle/JA1181k5NaaFcGh67"
+            />
             <Button
               text="Learn More"
               href="https://edgeucsd.wixsite.com/edge"
@@ -237,7 +266,8 @@ export default function Programs() {
         </div>
       </section>
       <section id="mentor-mentee" className="bg-primary-medium text-gray-light flex flex-col items-center gap-md">
-        <h1 className="text-primary-light">Mentor-Mentee</h1>
+        <h1 className="text-primary-light">Cookie/Crumb</h1>
+        <h3>(Mentor-Mentee)</h3>
         <div className="flex flex-col sm:flex-row gap-md">
           <Image
             src="/images/programs_mentor_mentee.jpg"
@@ -246,21 +276,38 @@ export default function Programs() {
             height={500}
             className="sm:w-1/2 object-cover flex-none"
           />
-          <p className="sm:w-1/2">
-            WIC Mentor-Mentee is a collaborative partnership between a mentor and mentee that supports mutual growth through the sharing of talents, skills, and experiences. It involves a meaningful investment of time and effort from both parties and serves as a valuable opportunity for personal and professional development.
-            Being a part of this program will give you the opportunity to support your peers and help contribute to their undergraduate experience in computing, in addition to giving you a chance to develop a closer relationship with the WIC community here at UCSD!
-            Mentors and mentees are paired every fall quarter. Be on the look-out for applications to open in the fall!
-          </p>
+          <div className="sm:w-1/2 flex flex-col gap-sm">
+            <p>
+              WIC&apos;s Cookie-Crumb is a collaborative partnership between a mentor and mentee that supports mutual growth through the sharing of talents, skills, and experiences. It involves a meaningful investment of time and effort from both parties and serves as a valuable opportunity for personal and professional development.
+            </p>
+            <p>
+              Being a part of this program will give you the opportunity to support your peers and help contribute to their undergraduate experience in computing, in addition to giving you a chance to develop a closer relationship with the WIC community here at UCSD! Mentors and mentees are paired every fall quarter.
+            </p>
+          </div>
+        </div>
+
+        {/* Next line, centered under the columns */}
+        <div className="flex flex-col items-center gap-sm">
+          <h3 className="font-bold">Apply by the end of Week 2!</h3>
+          <div className="[&>div]:before:border-primary-light">
+            <Button
+              text="Apply here"
+              href="https://forms.gle/V4Rc4XQtE5eAMHxJ9"
+            />
+          </div>
         </div>
       </section>
       <section id="project-teams" className="flex flex-col items-center gap-md">
         <h1>Project Teams</h1>
         <p>
-          WIC Project Teams is designed to give students an opportunity to gain project experience. Join or get placed into a team and build a project (website application) over the quarter that you can showcase to potential employers.
-          Prior website/mobile development experience is not necessary. We are looking less at technical experience and more at motivation and initiative!
-          Each quarter, projects will be centered around a theme. For example, in Winter 2025, the theme was creating a website centered around activism. 
-          Keep an eye out for when applications open each quarter. In the meantime, check out some of the past winning below! 
+          Think of a quarter-long hackathon. That is exactly what WIC Project Teams is! This program gives students the opportunity to gain project experience while trying new things. Join, get placed into a team, and build a coding project over the quarter. Once your project is complete, you can showcase it to potential employers and even win Best Project!<br></br>
+          Prior website or mobile development experience is not necessary! We are looking less at technical experience and more at motivation and initiative! 
+          If you're interested, apply through the link below <b>by October 9th at 11:59 PM</b>. In the meantime, check out some of our past winning projects!
         </p>
+        <Button
+          text="Apply here"
+          href="https://forms.gle/CCNAMBXU2LfiuCCV8"
+        />
         <h2>Past Projects</h2>
         <ProjectsGallery projects={projects}/>
       </section>

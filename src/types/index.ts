@@ -29,6 +29,7 @@ export type Project = {
   link?: string; // Optional project link
   github?: string; // Optional GitHub link
   image?: string; // Optional image path
+  theme: string; // Each quarter's theme
 };
 
 export type Sponsor = {

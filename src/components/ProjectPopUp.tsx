@@ -61,7 +61,10 @@ export default function ProjectPopUp({ year, projects }: ProjectPopUpProps) {
 
       {/* Pop-Up */}
       {isPopUpOpen && (
-        <div className="fixed inset-0 z-2 flex items-center justify-center bg-primary-medium/70">
+        <div
+          className="fixed inset-0 z-2 flex items-center justify-center bg-primary-medium/70"
+          onClick={togglePopUp} // Clicking the dimmed background closes the popup
+        >
           <div
             className="
               bg-gray-light p-md pt-sm

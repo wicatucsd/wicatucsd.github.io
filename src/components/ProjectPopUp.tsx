@@ -18,6 +18,7 @@ export default function ProjectPopUp({ year, projects }: ProjectPopUpProps) {
 
   const thumbnailImage = projects[0]?.image || "/images/wic_logo.png";
   const NO_WINNER_LABEL = ["Winter 2025", "Spring 2025"];
+  const theme = projects[0]?.theme?.trim() || "TBD"; // All projects in a quarter share one theme
   
   return (
     <div>
@@ -41,6 +42,7 @@ export default function ProjectPopUp({ year, projects }: ProjectPopUpProps) {
           >
             <div>
               <h3 className="font-bold">{year} Projects</h3>
+              {theme && <p>Theme: {theme}</p>}
               <p>{NO_WINNER_LABEL.includes(year) ? `` : `Winner: ${projects[0].name}`}</p>
             </div>
 
@@ -59,7 +61,10 @@ export default function ProjectPopUp({ year, projects }: ProjectPopUpProps) {
 
       {/* Pop-Up */}
       {isPopUpOpen && (
-        <div className="fixed inset-0 z-2 flex items-center justify-center bg-primary-medium/70">
+        <div
+          className="fixed inset-0 z-2 flex items-center justify-center bg-primary-medium/70"
+          onClick={togglePopUp} // Clicking the dimmed background closes the popup
+        >
           <div
             className="
               bg-gray-light p-md pt-sm
@@ -70,7 +75,10 @@ export default function ProjectPopUp({ year, projects }: ProjectPopUpProps) {
             onClick={e => e.stopPropagation()}
           >
             <div className="flex justify-between items-center">
-              <h2 className="text-primary-dark">{year}</h2>
+              <div>
+                <h2 className="text-primary-dark">{year}</h2>
+                {theme && <p className="font-bold">Theme: {theme}</p>}
+              </div>
               <button
                 className="text-gray-dark font-bold p-2 text-xl cursor-pointer transition-transform duration-200 hover:scale-120"
                 onClick={togglePopUp}

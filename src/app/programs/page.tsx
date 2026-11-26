@@ -106,7 +106,7 @@ export default function Programs() {
                     />
                     <Button
                       text="Solutions"
-                      href="https://drive.google.com/drive/folders/1oxEqdVjDU68Tb4VE_bf4MqyGp9xQuc3F?usp=sharing"
+                      href="https://docs.google.com/document/d/1iqKYwRSJd_RFTIXxzXfylvMJ0OBYGWCvzMrbVzw5hKE/edit?tab=t.0"
                     />
                   </div>
                 </div>

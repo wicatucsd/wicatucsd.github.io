@@ -136,7 +136,7 @@ export default function Home() {
             />
             <Button
               text="Support Us"
-              href="http://tinyurl.com/Sponsor-WIC"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSd0QREvgTcn4jYtkUOFnKI-tIaz4e3Lr1RjbmgdGqJ9KG_DaQ/viewform"
               color="dark"
             />
           </div>

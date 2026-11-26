@@ -69,53 +69,7 @@ export default function Programs() {
           <div className="bg-primary-light p-md">
             <TabPanel>
               <h2>Upcoming BPC</h2>
-              <h3>Fall 2026!</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-[250px_250px] gap-md">
-                <div className="flex flex-col items-start gap-sm">
-                  <Image
-                    src="/images/FA26_BPC_Participant.png"
-                    alt="Participant graphic"
-                    width={400}
-                    height={400}
-                    className="object-cover flex-none w-[250px] h-auto"
-                  />
-                  <div className="flex flex-col items-start gap-sm">
-                    <p>
-                      Have you not taken upper divisions?
-                      <br />
-                      Join our next competition!
-                      <br />
-                      Apply by <b>November 11th @ 11:59 PM</b>!
-                    </p>
-                    <Button
-                      text="Apply here"
-                      href="https://forms.gle/wZtG2ZuYGnJK51kWA"
-                    />
-                  </div>
-                </div>
-                <div className="flex flex-col items-start gap-sm">
-                  <Image
-                    src="/images/FA26_BPC_Volunteer.png"
-                    alt="Volunteer graphic"
-                    width={400}
-                    height={400}
-                    className="object-cover flex-none w-[250px] h-auto"
-                  />
-                  <div className="flex flex-col items-start gap-sm">
-                    <p>
-                      Already taking upper divisions or want to help out?
-                      <br />
-                      Become a volunteer instead!
-                      <br />
-                      Apply by <b>November 11th @ 11:59 PM</b>!
-                    </p>
-                    <Button
-                      text="Apply here"
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSfZCpD-mRcJO30uIyvkSoNpKlxCNWReREUhY-Vc2njVlHwrFw/viewform?usp=send_form"
-                    />
-                  </div>
-                </div>
-              </div>
+              <h3>Winter 2026!</h3>
               <div className="flex flex-col sm:flex-row justify-center items-center gap-md">
                 <Image
                   src=""
@@ -136,6 +90,26 @@ export default function Programs() {
             <TabPanel>
               <h2>Previous BPCs</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-md">
+                <div className="flex flex-col gap-sm">
+                  <h3>Fall 2026</h3>
+                  <Image
+                    src="/images/bpc_fa26.png"
+                    alt="BPC graphic"
+                    width={300}
+                    height={300}
+                    className="object-cover flex-none"
+                  />
+                  <div className="flex gap-sm">
+                    <Button
+                      text="Problems"
+                      href="https://docs.google.com/document/d/1iqKYwRSJd_RFTIXxzXfylvMJ0OBYGWCvzMrbVzw5hKE/edit?tab=t.0"
+                    />
+                    <Button
+                      text="Solutions"
+                      href="https://docs.google.com/document/d/1iqKYwRSJd_RFTIXxzXfylvMJ0OBYGWCvzMrbVzw5hKE/edit?tab=t.0"
+                    />
+                  </div>
+                </div>
                 <div className="flex flex-col gap-sm">
                   <h3>Spring 2026</h3>
                   <Image
